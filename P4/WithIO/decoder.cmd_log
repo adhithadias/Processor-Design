@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/decoder.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/decoder.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim decoder.ngc decoder_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/decoder.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/decoder.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim decoder.ngc decoder_synthesis.v 
+vhdtdtfi -lang verilog -prj Start -o "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/decoder.tfi" -lib work "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start//decoder.v" -module decoder -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

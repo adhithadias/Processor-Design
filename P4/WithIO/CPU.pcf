@@ -1,0 +1,12 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun Aug 27 13:08:39 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "rx" LOCATE = SITE "A16" LEVEL 1;
+COMP "tx" LOCATE = SITE "B16" LEVEL 1;
+COMP "clk" LOCATE = SITE "L15" LEVEL 1;
+COMP "reset" LOCATE = SITE "F5" LEVEL 1;
+COMP "status" LOCATE = SITE "U18" LEVEL 1;
+SCHEMATIC END;
+

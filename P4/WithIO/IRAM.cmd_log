@@ -1,0 +1,16 @@
+vhdtdtfi -lang verilog -prj Start -o "C:/Users/adhit/Desktop/Processor Design/Projects/Start/IRAM.tfi" -lib work "C:/Users/adhit/Desktop/Processor Design/Projects/Start//IRAM.v" -module IRAM -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Start/IRAM.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Start/IRAM.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim IRAM.ngc IRAM_synthesis.v 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim IRAM.ngc IRAM_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Start/IRAM.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Start/IRAM.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim IRAM.ngc IRAM_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Start/IRAM.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Start/IRAM.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim IRAM.ngc IRAM_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Start/IRAM.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Start/IRAM.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim IRAM.ngc IRAM_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Start/IRAM.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Start/IRAM.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim IRAM.ngc IRAM_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Start/IRAM.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Start/IRAM.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim IRAM.ngc IRAM_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Start/IRAM.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Start/IRAM.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim IRAM.ngc IRAM_synthesis.v 

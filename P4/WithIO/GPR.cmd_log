@@ -1,0 +1,8 @@
+vhdtdtfi -lib work {C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/GPR.v} -lang verilog -prj Start -o GPR.spl -module GPR -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 GPR.spl {C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/GPR.sym} 
+vhdtdtfi -lang verilog -prj Start -o "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/GPR.tfi" -lib work "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start//GPR.v" -module GPR -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lang verilog -prj Start -o "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/GPR.tfi" -lib work "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start//GPR.v" -module GPR -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/GPR.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/GPR.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim GPR.ngc GPR_synthesis.v 
+vhdtdtfi -lang verilog -prj Start -o "C:/Users/adhit/Desktop/Processor Design/Processor2/Start/GPR.tfi" -lib work "C:/Users/adhit/Desktop/Processor Design/Processor2/Start//GPR.v" -module GPR -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Processor2/Start/GPR.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Processor2/Start/GPR.syr" 

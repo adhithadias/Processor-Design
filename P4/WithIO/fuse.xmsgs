@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="267" delta="unknown" >"D:/Competitions and Projects/Processor Design/Final/P4/WithIO/CPU_TEST.v" Line 35: Cannot find port <arg fmt="%s" index="1">finish</arg> on this module
+</msg>
+
+<msg type="error" file="HDLCompiler" num="25" delta="unknown" >"D:/Competitions and Projects/Processor Design/Final/P4/WithIO/CPU_TEST.v" Line 36: Module &lt;<arg fmt="%s" index="1">CPU</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">enable</arg>&gt;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="25" delta="unknown" >"D:/Competitions and Projects/Processor Design/Final/P4/WithIO/CPU_TEST.v" Line 38: Module &lt;<arg fmt="%s" index="1">CPU</arg>&gt; does not have a port named &lt;<arg fmt="%s" index="2">finish</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"D:/Competitions and Projects/Processor Design/Final/P4/WithIO/CPU_TEST.v" Line 35: Port <arg fmt="%s" index="1">reset</arg> is not connected to this instance
+</msg>
+
+<msg type="error" file="Simulator" num="778" delta="unknown" >Static elaboration of top level Verilog design unit(s) in library <arg fmt="%s" index="1">work</arg> failed
+</msg>
+
+</messages>
+

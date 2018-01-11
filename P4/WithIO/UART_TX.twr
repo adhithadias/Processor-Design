@@ -1,0 +1,87 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml UART_TX.twx UART_TX.ncd -o UART_TX.twr UART_TX.pcf
+
+Design file:              UART_TX.ncd
+Physical constraint file: UART_TX.pcf
+Device,package,speed:     xc6slx45,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+din<0>      |    0.389(R)|      FAST  |    0.410(R)|      SLOW  |clk_BUFGP         |   0.000|
+din<1>      |    0.214(R)|      FAST  |    0.596(R)|      SLOW  |clk_BUFGP         |   0.000|
+din<2>      |    0.214(R)|      FAST  |    0.663(R)|      SLOW  |clk_BUFGP         |   0.000|
+din<3>      |    0.465(R)|      FAST  |    0.323(R)|      SLOW  |clk_BUFGP         |   0.000|
+din<4>      |    0.163(R)|      FAST  |    0.721(R)|      SLOW  |clk_BUFGP         |   0.000|
+din<5>      |    0.302(R)|      FAST  |    0.526(R)|      SLOW  |clk_BUFGP         |   0.000|
+din<6>      |   -0.011(R)|      FAST  |    0.886(R)|      SLOW  |clk_BUFGP         |   0.000|
+din<7>      |    0.257(R)|      FAST  |    0.548(R)|      SLOW  |clk_BUFGP         |   0.000|
+reset       |    0.622(R)|      FAST  |    0.516(R)|      SLOW  |clk_BUFGP         |   0.000|
+s_tick      |    1.710(R)|      SLOW  |    0.152(R)|      SLOW  |clk_BUFGP         |   0.000|
+tx_start    |    1.953(R)|      SLOW  |    0.091(R)|      SLOW  |clk_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+tx          |         7.694(R)|      SLOW  |         4.134(R)|      FAST  |clk_BUFGP         |   0.000|
+tx_done_tick|         9.608(R)|      SLOW  |         4.609(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.369|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+s_tick         |tx_done_tick   |    7.405|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Apr 20 13:07:07 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 266 MB
+
+
+

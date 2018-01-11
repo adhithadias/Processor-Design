@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Competitions and Projects\Processor Design\Final\P4\WithIO\CPU.ncd
+OUTFILE=D:\Competitions and Projects\Processor Design\Final\P4\WithIO\CPU.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=D:\Competitions and Projects\Processor Design\Final\P4\WithIO
+LICENSE=WebPack
+USER_INFO=211306578_0_0_013

@@ -1,0 +1,1090 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: CPU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CPU.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CPU"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : CPU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\PC.v" into library work
+Parsing module <PC>.
+Analyzing Verilog file "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\microProcessor.v" into library work
+Parsing module <microProcessor>.
+Analyzing Verilog file "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\MDR.v" into library work
+Parsing module <MDR>.
+Analyzing Verilog file "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\MBRU.v" into library work
+Parsing module <MBRU>.
+Analyzing Verilog file "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\MAR.v" into library work
+Parsing module <MAR>.
+Analyzing Verilog file "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\GPR.v" into library work
+Parsing module <GPR>.
+Analyzing Verilog file "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\decoder.v" into library work
+Parsing module <decoder>.
+Analyzing Verilog file "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\UART_TX.v" into library work
+Parsing module <UART_TX>.
+Analyzing Verilog file "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\UART_RX.v" into library work
+Parsing module <UART_RX>.
+Analyzing Verilog file "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\Processor.v" into library work
+Parsing module <Processor>.
+Analyzing Verilog file "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\MUX2to1_8bit.v" into library work
+Parsing module <MUX2to1_8bit>.
+Analyzing Verilog file "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\MUX2to1_16bit.v" into library work
+Parsing module <MUX2to1_16bit>.
+Analyzing Verilog file "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\MUX2to1.v" into library work
+Parsing module <MUX2to1>.
+Analyzing Verilog file "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\ipcore_dir\InsROM.v" into library work
+Parsing module <InsROM>.
+Analyzing Verilog file "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\ipcore_dir\DataRAM.v" into library work
+Parsing module <DataRAM>.
+Analyzing Verilog file "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\IO_MODULE.v" into library work
+Parsing module <IO_MODULE>.
+Analyzing Verilog file "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\DMUX1to2_8bit.v" into library work
+Parsing module <DMUX1to2_8bit>.
+Analyzing Verilog file "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\CLOCK_GEN.v" into library work
+Parsing module <CLOCK_GEN>.
+Analyzing Verilog file "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\CPU.v" into library work
+Parsing module <CPU>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <CPU>.
+
+Elaborating module <CLOCK_GEN>.
+WARNING:HDLCompiler:413 - "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\CLOCK_GEN.v" Line 36: Result of 9-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <Processor>.
+
+Elaborating module <MAR>.
+
+Elaborating module <MDR>.
+
+Elaborating module <PC>.
+
+Elaborating module <MBRU>.
+
+Elaborating module <GPR>.
+
+Elaborating module <decoder>.
+
+Elaborating module <microProcessor>.
+WARNING:HDLCompiler:872 - "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\microProcessor.v" Line 103: Using initial value of ROM since it is never assigned
+
+Elaborating module <ALU>.
+
+Elaborating module <DataRAM>.
+WARNING:HDLCompiler:1499 - "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\ipcore_dir\DataRAM.v" Line 39: Empty module <DataRAM> remains a black box.
+
+Elaborating module <InsROM>.
+WARNING:HDLCompiler:1499 - "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\ipcore_dir\InsROM.v" Line 39: Empty module <InsROM> remains a black box.
+
+Elaborating module <IO_MODULE>.
+WARNING:HDLCompiler:413 - "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\IO_MODULE.v" Line 72: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\IO_MODULE.v" Line 97: Result of 18-bit expression is truncated to fit in 17-bit target.
+WARNING:HDLCompiler:413 - "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\IO_MODULE.v" Line 158: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\IO_MODULE.v" Line 175: Result of 18-bit expression is truncated to fit in 17-bit target.
+
+Elaborating module <UART_TX>.
+WARNING:HDLCompiler:413 - "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\UART_TX.v" Line 94: Result of 4-bit expression is truncated to fit in 3-bit target.
+
+Elaborating module <UART_RX>.
+WARNING:HDLCompiler:413 - "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\UART_RX.v" Line 93: Result of 4-bit expression is truncated to fit in 3-bit target.
+
+Elaborating module <MUX2to1_16bit>.
+
+Elaborating module <MUX2to1>.
+
+Elaborating module <MUX2to1_8bit>.
+
+Elaborating module <DMUX1to2_8bit>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <CPU>.
+    Related source file is "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\CPU.v".
+    Summary:
+	no macro.
+Unit <CPU> synthesized.
+
+Synthesizing Unit <CLOCK_GEN>.
+    Related source file is "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\CLOCK_GEN.v".
+        factor = 4
+    Found 1-bit register for signal <out>.
+    Found 8-bit register for signal <counter>.
+    Found 8-bit adder for signal <counter[7]_GND_2_o_add_2_OUT> created at line 36.
+    Found 8-bit comparator greater for signal <counter[7]_GND_2_o_LessThan_2_o> created at line 35
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <CLOCK_GEN> synthesized.
+
+Synthesizing Unit <Processor>.
+    Related source file is "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\Processor.v".
+    Summary:
+	no macro.
+Unit <Processor> synthesized.
+
+Synthesizing Unit <MAR>.
+    Related source file is "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\MAR.v".
+    Found 24-bit register for signal <data_addr>.
+    Summary:
+	inferred  24 D-type flip-flop(s).
+Unit <MAR> synthesized.
+
+Synthesizing Unit <MDR>.
+    Related source file is "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\MDR.v".
+    Found 8-bit register for signal <data_out>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <MDR> synthesized.
+
+Synthesizing Unit <PC>.
+    Related source file is "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\PC.v".
+    Found 9-bit register for signal <ins_addr>.
+    Found 1-bit register for signal <state>.
+    Found 9-bit adder for signal <ins_addr[8]_GND_6_o_add_2_OUT> created at line 40.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  10 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <PC> synthesized.
+
+Synthesizing Unit <MBRU>.
+    Related source file is "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\MBRU.v".
+    Found 8-bit register for signal <ins_out>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <MBRU> synthesized.
+
+Synthesizing Unit <GPR>.
+    Related source file is "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\GPR.v".
+    Found 24-bit register for signal <d_out>.
+    Summary:
+	inferred  24 D-type flip-flop(s).
+Unit <GPR> synthesized.
+
+Synthesizing Unit <decoder>.
+    Related source file is "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\decoder.v".
+    Summary:
+	no macro.
+Unit <decoder> synthesized.
+
+Synthesizing Unit <microProcessor>.
+    Related source file is "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\microProcessor.v".
+        JMNZ1 = 8'b00010110
+        JMNZY1 = 8'b00010111
+        JMNZN1 = 8'b00011001
+        FETCH2 = 8'b00000001
+WARNING:Xst:647 - Input <addr_sel> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <JUMP> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 2-bit register for signal <state>.
+    Found 31-bit register for signal <MIR>.
+    Found 1-bit register for signal <start>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 1                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 64x31-bit Read Only RAM for signal <addr[5]_X_10_o_wide_mux_9_OUT>
+    Summary:
+	inferred   1 RAM(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Finite State Machine(s).
+Unit <microProcessor> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\ALU.v".
+        ADD = 4'b0001
+        SUB = 4'b0010
+        PASSATOC = 4'b0111
+        PASSBTOC = 4'b1000
+        INCAC = 4'b1001
+        DECAC = 4'b1010
+        LSHFT1 = 4'b0011
+        LSHFT2 = 4'b0100
+        LSHFT8 = 4'b0101
+        RSHFT4 = 4'b0110
+        RESET = 4'b1011
+    Found 24-bit subtractor for signal <A_bus[23]_B_bus[23]_sub_2_OUT> created at line 34.
+    Found 24-bit subtractor for signal <A_bus[23]_GND_11_o_sub_5_OUT> created at line 52.
+    Found 24-bit adder for signal <A_bus[23]_B_bus[23]_add_0_OUT> created at line 31.
+    Found 24-bit adder for signal <A_bus[23]_GND_11_o_add_3_OUT> created at line 50.
+    Found 24-bit 13-to-1 multiplexer for signal <C_bus> created at line 30.
+WARNING:Xst:737 - Found 1-bit latch for signal <Z_flag>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Latch(s).
+	inferred  22 Multiplexer(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <IO_MODULE>.
+    Related source file is "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\IO_MODULE.v".
+        RAM_LEN = 65536
+        IDLE_RX = 0
+        RX_1 = 1
+        RX_2 = 2
+        RX_3 = 3
+        WAIT_RX = 4
+        IDLE_TX = 5
+        TX_1 = 6
+        TX_2 = 7
+        TX_3 = 8
+        TX_4 = 9
+        WAIT_TX = 10
+    Found 4-bit register for signal <STATE_RX>.
+    Found 1-bit register for signal <write>.
+    Found 17-bit register for signal <write_addr>.
+    Found 1-bit register for signal <select>.
+    Found 1-bit register for signal <reset_cpu>.
+    Found 17-bit register for signal <read_addr>.
+    Found 4-bit register for signal <STATE_TX>.
+    Found 1-bit register for signal <tx_start>.
+    Found 16-bit register for signal <ram_addr>.
+    Found finite state machine <FSM_1> for signal <STATE_TX>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 0101                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_2> for signal <STATE_RX>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 9                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 17-bit adder for signal <write_addr[16]_GND_15_o_add_4_OUT> created at line 97.
+    Found 17-bit adder for signal <read_addr[16]_GND_15_o_add_24_OUT> created at line 175.
+    Found 17-bit comparator greater for signal <read_addr[16]_GND_15_o_LessThan_24_o> created at line 174
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  54 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   7 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
+Unit <IO_MODULE> synthesized.
+
+Synthesizing Unit <UART_TX>.
+    Related source file is "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\UART_TX.v".
+        CLOCKS_PER_BIT = 50
+        IDLE = 3'b000
+        START = 3'b001
+        DATA_TX = 3'b010
+        STOP = 3'b011
+        CLEANUP = 3'b100
+        DELAY = 2
+    Found 33-bit register for signal <clock_count>.
+    Found 1-bit register for signal <tx_data_done>.
+    Found 1-bit register for signal <tx_data>.
+    Found 3-bit register for signal <tx_bit_index>.
+    Found 8-bit register for signal <data_byte>.
+    Found 3-bit register for signal <state>.
+    Found finite state machine <FSM_3> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <tx_bit_index[2]_GND_16_o_add_11_OUT> created at line 94.
+    Found 33-bit adder for signal <clock_count[32]_GND_16_o_add_22_OUT> created at line 125.
+    Found 1-bit 8-to-1 multiplexer for signal <tx_bit_index[2]_data_byte[7]_Mux_7_o> created at line 82.
+    Found 3-bit comparator greater for signal <tx_bit_index[2]_PWR_17_o_LessThan_11_o> created at line 91
+    Found 33-bit comparator greater for signal <clock_count[32]_GND_16_o_LessThan_18_o> created at line 110
+    Found 33-bit comparator greater for signal <clock_count[32]_GND_16_o_LessThan_22_o> created at line 123
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  46 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred  10 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <UART_TX> synthesized.
+
+Synthesizing Unit <UART_RX>.
+    Related source file is "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\UART_RX.v".
+        CLOCKS_PER_BIT = 50
+        IDLE = 3'b000
+        START = 3'b001
+        DATA_RX = 3'b010
+        STOP = 3'b011
+        CLEANUP = 3'b100
+        DELAY = 1
+    Found 1-bit register for signal <rxdone>.
+    Found 33-bit register for signal <clock_count>.
+    Found 1-bit register for signal <data_byte<7>>.
+    Found 1-bit register for signal <data_byte<6>>.
+    Found 1-bit register for signal <data_byte<5>>.
+    Found 1-bit register for signal <data_byte<4>>.
+    Found 1-bit register for signal <data_byte<3>>.
+    Found 1-bit register for signal <data_byte<2>>.
+    Found 1-bit register for signal <data_byte<1>>.
+    Found 1-bit register for signal <data_byte<0>>.
+    Found 3-bit register for signal <rx_bit_index>.
+    Found 3-bit register for signal <state>.
+    Found finite state machine <FSM_4> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <rx_bit_index[2]_GND_17_o_add_15_OUT> created at line 93.
+    Found 33-bit adder for signal <clock_count[32]_GND_17_o_add_23_OUT> created at line 111.
+    Found 33-bit comparator greater for signal <clock_count[32]_GND_17_o_LessThan_8_o> created at line 68
+    Found 3-bit comparator greater for signal <rx_bit_index[2]_PWR_18_o_LessThan_15_o> created at line 91
+    Found 33-bit comparator greater for signal <clock_count[32]_GND_17_o_LessThan_12_o> created at line 109
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  45 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred  15 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <UART_RX> synthesized.
+
+Synthesizing Unit <MUX2to1_16bit>.
+    Related source file is "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\MUX2to1_16bit.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX2to1_16bit> synthesized.
+
+Synthesizing Unit <MUX2to1>.
+    Related source file is "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\MUX2to1.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX2to1> synthesized.
+
+Synthesizing Unit <MUX2to1_8bit>.
+    Related source file is "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\MUX2to1_8bit.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX2to1_8bit> synthesized.
+
+Synthesizing Unit <DMUX1to2_8bit>.
+    Related source file is "D:\Competitions and Projects\Processor Design\Final\P4\WithIO\DMUX1to2_8bit.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <B<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <B<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <B<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <B<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <B<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <B<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <B<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <A<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <A<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <A<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <A<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <A<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <A<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <A<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <A<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <B<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  16 Latch(s).
+Unit <DMUX1to2_8bit> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 64x31-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 10
+ 17-bit adder                                          : 2
+ 24-bit addsub                                         : 1
+ 24-bit subtractor                                     : 1
+ 3-bit adder                                           : 2
+ 33-bit adder                                          : 2
+ 8-bit adder                                           : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 38
+ 1-bit register                                        : 18
+ 16-bit register                                       : 1
+ 17-bit register                                       : 2
+ 24-bit register                                       : 7
+ 3-bit register                                        : 2
+ 31-bit register                                       : 1
+ 33-bit register                                       : 2
+ 8-bit register                                        : 4
+ 9-bit register                                        : 1
+# Latches                                              : 17
+ 1-bit latch                                           : 17
+# Comparators                                          : 8
+ 17-bit comparator greater                             : 1
+ 3-bit comparator greater                              : 2
+ 33-bit comparator greater                             : 4
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 59
+ 1-bit 2-to-1 multiplexer                              : 15
+ 1-bit 8-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 2
+ 17-bit 2-to-1 multiplexer                             : 4
+ 24-bit 2-to-1 multiplexer                             : 20
+ 3-bit 2-to-1 multiplexer                              : 4
+ 33-bit 2-to-1 multiplexer                             : 10
+ 8-bit 2-to-1 multiplexer                              : 2
+ 9-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 5
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/DataRAM.ngc>.
+Reading core <ipcore_dir/InsROM.ngc>.
+Loading core <DataRAM> for timing and area information for instance <dram216>.
+Loading core <InsROM> for timing and area information for instance <irom512>.
+WARNING:Xst:1426 - The value init of the FF/Latch start hinder the constant cleaning in the block controlStore.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch state hinder the constant cleaning in the block PC_reg.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:2677 - Node <MIR_21> of sequential type is unconnected in block <controlStore>.
+WARNING:Xst:2677 - Node <data_addr_16> of sequential type is unconnected in block <MAR_reg>.
+WARNING:Xst:2677 - Node <data_addr_17> of sequential type is unconnected in block <MAR_reg>.
+WARNING:Xst:2677 - Node <data_addr_18> of sequential type is unconnected in block <MAR_reg>.
+WARNING:Xst:2677 - Node <data_addr_19> of sequential type is unconnected in block <MAR_reg>.
+WARNING:Xst:2677 - Node <data_addr_20> of sequential type is unconnected in block <MAR_reg>.
+WARNING:Xst:2677 - Node <data_addr_21> of sequential type is unconnected in block <MAR_reg>.
+WARNING:Xst:2677 - Node <data_addr_22> of sequential type is unconnected in block <MAR_reg>.
+WARNING:Xst:2677 - Node <data_addr_23> of sequential type is unconnected in block <MAR_reg>.
+
+Synthesizing (advanced) Unit <CLOCK_GEN>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <CLOCK_GEN> synthesized (advanced).
+
+Synthesizing (advanced) Unit <PC>.
+The following registers are absorbed into counter <ins_addr>: 1 register on signal <ins_addr>.
+Unit <PC> synthesized (advanced).
+
+Synthesizing (advanced) Unit <microProcessor>.
+INFO:Xst:3231 - The small RAM <Mram_addr[5]_X_10_o_wide_mux_9_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 31-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <addr<5:0>>     |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <microProcessor> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 64x31-bit single-port distributed Read Only RAM       : 1
+# Adders/Subtractors                                   : 8
+ 17-bit adder                                          : 2
+ 24-bit addsub                                         : 1
+ 24-bit subtractor                                     : 1
+ 3-bit adder                                           : 2
+ 33-bit adder                                          : 2
+# Counters                                             : 2
+ 8-bit up counter                                      : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 363
+ Flip-Flops                                            : 363
+# Comparators                                          : 8
+ 17-bit comparator greater                             : 1
+ 3-bit comparator greater                              : 2
+ 33-bit comparator greater                             : 4
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 58
+ 1-bit 2-to-1 multiplexer                              : 15
+ 1-bit 8-to-1 multiplexer                              : 1
+ 16-bit 2-to-1 multiplexer                             : 2
+ 17-bit 2-to-1 multiplexer                             : 4
+ 24-bit 2-to-1 multiplexer                             : 20
+ 3-bit 2-to-1 multiplexer                              : 4
+ 33-bit 2-to-1 multiplexer                             : 10
+ 8-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch state hinder the constant cleaning in the block PC.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch start hinder the constant cleaning in the block microProcessor.
+   You should achieve better results by setting this init to 1.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <IO/FSM_2> on signal <STATE_RX[1:5]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 00001
+ 0001  | 00010
+ 0010  | 00100
+ 0011  | 01000
+ 0100  | 10000
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <IO/FSM_1> on signal <STATE_TX[1:6]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0101  | 000001
+ 0110  | 000010
+ 0111  | 000100
+ 1000  | 001000
+ 1001  | 010000
+ 1010  | 100000
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Rx/FSM_4> on signal <state[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 100   | 100
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <pentium4/controlStore/FSM_0> on signal <state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Tx/FSM_3> on signal <state[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 100   | 100
+-------------------
+
+Optimizing unit <MBRU> ...
+
+Optimizing unit <MAR> ...
+
+Optimizing unit <CPU> ...
+
+Optimizing unit <IO_MODULE> ...
+
+Optimizing unit <UART_RX> ...
+
+Optimizing unit <Processor> ...
+
+Optimizing unit <MDR> ...
+
+Optimizing unit <microProcessor> ...
+
+Optimizing unit <UART_TX> ...
+
+Optimizing unit <DMUX1to2_8bit> ...
+WARNING:Xst:2677 - Node <pentium4/controlStore/MIR_21> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <pentium4/MAR_reg/data_addr_23> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <pentium4/MAR_reg/data_addr_22> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <pentium4/MAR_reg/data_addr_21> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <pentium4/MAR_reg/data_addr_20> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <pentium4/MAR_reg/data_addr_19> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <pentium4/MAR_reg/data_addr_18> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <pentium4/MAR_reg/data_addr_17> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <pentium4/MAR_reg/data_addr_16> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_32> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_31> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_30> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_29> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_28> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_27> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_26> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_25> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_24> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_23> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_22> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_21> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_20> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_19> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_18> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_17> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_16> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_15> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_14> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_13> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_12> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_11> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_10> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_9> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_8> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_7> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Tx/clock_count_6> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <IO/read_addr_16> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_32> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_31> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_30> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_29> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_28> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_27> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_26> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_25> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_24> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_23> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_22> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_21> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_20> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_19> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_18> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_17> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_16> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_15> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_14> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_13> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_12> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_11> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_10> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_9> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_8> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_7> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Rx/clock_count_6> has a constant value of 0 in block <CPU>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <IO/STATE_RX_FSM_FFd3> in Unit <CPU> is equivalent to the following FF/Latch, which will be removed : <IO/write> 
+INFO:Xst:2261 - The FF/Latch <pentium4/PC_reg/state> in Unit <CPU> is equivalent to the following FF/Latch, which will be removed : <pentium4/controlStore/start> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block CPU, actual ratio is 3.
+FlipFlop pentium4/controlStore/MIR_0 has been replicated 1 time(s)
+FlipFlop pentium4/controlStore/MIR_1 has been replicated 4 time(s)
+FlipFlop pentium4/controlStore/MIR_17 has been replicated 2 time(s)
+FlipFlop pentium4/controlStore/MIR_18 has been replicated 2 time(s)
+FlipFlop pentium4/controlStore/MIR_19 has been replicated 3 time(s)
+FlipFlop pentium4/controlStore/MIR_2 has been replicated 3 time(s)
+FlipFlop pentium4/controlStore/MIR_20 has been replicated 1 time(s)
+FlipFlop pentium4/controlStore/MIR_3 has been replicated 3 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 352
+ Flip-Flops                                            : 352
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : CPU.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 958
+#      GND                         : 3
+#      INV                         : 8
+#      LUT1                        : 50
+#      LUT2                        : 23
+#      LUT3                        : 102
+#      LUT4                        : 52
+#      LUT5                        : 153
+#      LUT6                        : 316
+#      MUXCY                       : 129
+#      MUXF7                       : 9
+#      VCC                         : 3
+#      XORCY                       : 110
+# FlipFlops/Latches                : 374
+#      FD                          : 51
+#      FDE                         : 249
+#      FDE_1                       : 49
+#      FDR                         : 8
+#      LD                          : 17
+# RAMS                             : 33
+#      RAMB16BWER                  : 32
+#      RAMB8BWER                   : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 4
+#      IBUF                        : 2
+#      OBUF                        : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             374  out of  54576     0%  
+ Number of Slice LUTs:                  704  out of  27288     2%  
+    Number used as Logic:               704  out of  27288     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    868
+   Number with an unused Flip Flop:     494  out of    868    56%  
+   Number with an unused LUT:           164  out of    868    18%  
+   Number of fully used LUT-FF pairs:   210  out of    868    24%  
+   Number of unique control sets:        26
+
+IO Utilization: 
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of    218     2%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               33  out of    116    28%  
+    Number using Block RAM only:         33
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                                                                  | Clock buffer(FF name)                                                                                                               | Load  |
+------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+-------+
+clk                                                                           | BUFGP                                                                                                                               | 9     |
+clk_gen/out                                                                   | BUFG                                                                                                                                | 380   |
+IO/reset_cpu                                                                  | NONE(pentium4/PC_reg/state)                                                                                                         | 1     |
+pentium4/ALU_24bit/Mmux_C_bus12_A332(pentium4/ALU_24bit/Mmux_C_bus12_A33211:O)| NONE(*)(pentium4/ALU_24bit/Z_flag)                                                                                                  | 1     |
+IO/select                                                                     | NONE(dmux1/A_0)                                                                                                                     | 16    |
+dram216/N1                                                                    | NONE(dram216/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram)| 32    |
+irom512/N1                                                                    | NONE(irom512/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram)    | 1     |
+------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 12.860ns (Maximum Frequency: 77.760MHz)
+   Minimum input arrival time before clock: 3.937ns
+   Maximum output required time after clock: 5.387ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.541ns (frequency: 282.418MHz)
+  Total number of paths / destination ports: 109 / 17
+-------------------------------------------------------------------------
+Delay:               3.541ns (Levels of Logic = 2)
+  Source:            clk_gen/counter_6 (FF)
+  Destination:       clk_gen/counter_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: clk_gen/counter_6 to clk_gen/counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.447   0.845  clk_gen/counter_6 (clk_gen/counter_6)
+     LUT3:I0->O            1   0.205   0.580  clk_gen/counter[7]_GND_2_o_LessThan_2_o_inv_SW0 (N3)
+     LUT6:I5->O            9   0.205   0.829  clk_gen/counter[7]_GND_2_o_LessThan_2_o_inv (clk_gen/counter[7]_GND_2_o_LessThan_2_o_inv)
+     FDR:R                     0.430          clk_gen/counter_0
+    ----------------------------------------
+    Total                      3.541ns (1.287ns logic, 2.254ns route)
+                                       (36.3% logic, 63.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_gen/out'
+  Clock period: 12.860ns (frequency: 77.760MHz)
+  Total number of paths / destination ports: 790571 / 1409
+-------------------------------------------------------------------------
+Delay:               6.430ns (Levels of Logic = 13)
+  Source:            pentium4/controlStore/MIR_2_2 (FF)
+  Destination:       pentium4/PC_reg/ins_addr_8 (FF)
+  Source Clock:      clk_gen/out falling
+  Destination Clock: clk_gen/out rising
+
+  Data Path: pentium4/controlStore/MIR_2_2 to pentium4/PC_reg/ins_addr_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            7   0.447   0.878  pentium4/controlStore/MIR_2_2 (pentium4/controlStore/MIR_2_2)
+     LUT6:I4->O            3   0.203   0.879  pentium4/decoder_4to16/_n0087<2>1 (pentium4/decoder_4to16/_n0087<2>)
+     LUT5:I2->O            4   0.205   0.684  pentium4/decoder_4to16/_n0087<2>4 (pentium4/B_bus<2>)
+     LUT5:I4->O            1   0.205   0.808  pentium4/ALU_24bit/Mmux_C_bus12_A334_SW0 (N101)
+     LUT6:I3->O            1   0.205   0.000  pentium4/ALU_24bit/Mmux_C_bus12_rs_lut<2> (pentium4/ALU_24bit/Mmux_C_bus12_rs_lut<2>)
+     MUXCY:S->O            1   0.172   0.000  pentium4/ALU_24bit/Mmux_C_bus12_rs_cy<2> (pentium4/ALU_24bit/Mmux_C_bus12_rs_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  pentium4/ALU_24bit/Mmux_C_bus12_rs_cy<3> (pentium4/ALU_24bit/Mmux_C_bus12_rs_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  pentium4/ALU_24bit/Mmux_C_bus12_rs_cy<4> (pentium4/ALU_24bit/Mmux_C_bus12_rs_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  pentium4/ALU_24bit/Mmux_C_bus12_rs_cy<5> (pentium4/ALU_24bit/Mmux_C_bus12_rs_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  pentium4/ALU_24bit/Mmux_C_bus12_rs_cy<6> (pentium4/ALU_24bit/Mmux_C_bus12_rs_cy<6>)
+     XORCY:CI->O           9   0.180   0.830  pentium4/ALU_24bit/Mmux_C_bus12_rs_xor<7> (pentium4/C_bus<7>)
+     LUT3:I2->O            1   0.205   0.000  pentium4/PC_reg/Mcount_ins_addr_lut<7> (pentium4/PC_reg/Mcount_ins_addr_lut<7>)
+     MUXCY:S->O            0   0.172   0.000  pentium4/PC_reg/Mcount_ins_addr_cy<7> (pentium4/PC_reg/Mcount_ins_addr_cy<7>)
+     XORCY:CI->O           1   0.180   0.000  pentium4/PC_reg/Mcount_ins_addr_xor<8> (pentium4/PC_reg/Mcount_ins_addr8)
+     FDE:D                     0.102          pentium4/PC_reg/ins_addr_8
+    ----------------------------------------
+    Total                      6.430ns (2.352ns logic, 4.078ns route)
+                                       (36.6% logic, 63.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_gen/out'
+  Total number of paths / destination ports: 45 / 37
+-------------------------------------------------------------------------
+Offset:              3.937ns (Levels of Logic = 3)
+  Source:            rx (PAD)
+  Destination:       Rx/data_byte_0 (FF)
+  Destination Clock: clk_gen/out rising
+
+  Data Path: rx to Rx/data_byte_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   1.222   1.013  rx_IBUF (rx_IBUF)
+     LUT4:I2->O            9   0.203   1.194  Rx/state_FSM_FFd3-In11 (Rx/state_FSM_FFd3-In1)
+     LUT6:I0->O            1   0.203   0.000  Rx/data_byte_0_rstpot (Rx/data_byte_0_rstpot)
+     FD:D                      0.102          Rx/data_byte_0
+    ----------------------------------------
+    Total                      3.937ns (1.730ns logic, 2.207ns route)
+                                       (43.9% logic, 56.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_gen/out'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              5.387ns (Levels of Logic = 2)
+  Source:            IO/select (FF)
+  Destination:       status (PAD)
+  Source Clock:      clk_gen/out rising
+
+  Data Path: IO/select to status
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              35   0.447   1.334  IO/select (IO/select)
+     INV:I->O              9   0.206   0.829  status1_INV_0 (status_OBUF)
+     OBUF:I->O                 2.571          status_OBUF (status)
+    ----------------------------------------
+    Total                      5.387ns (3.224ns logic, 2.163ns route)
+                                       (59.9% logic, 40.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock IO/select
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_gen/out    |    4.087|         |    4.087|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.541|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_gen/out
+------------------------------------+---------+---------+---------+---------+
+                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------+---------+---------+---------+---------+
+IO/reset_cpu                        |    2.682|         |         |         |
+IO/select                           |    1.179|    1.613|         |         |
+clk_gen/out                         |    6.496|    6.430|    4.967|         |
+pentium4/ALU_24bit/Mmux_C_bus12_A332|         |         |    1.667|         |
+------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pentium4/ALU_24bit/Mmux_C_bus12_A332
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_gen/out    |         |         |    7.799|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.37 secs
+ 
+--> 
+
+Total memory usage is 299920 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  106 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

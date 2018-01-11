@@ -1,0 +1,23 @@
+vhdtdtfi -lang verilog -prj Start -o "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.tfi" -lib work "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start//microProcessor.v" -module microProcessor -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim microProcessor.ngc microProcessor_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.syr" 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.syr" 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.syr" 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.syr" 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.syr" 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.syr" 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.syr" 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim microProcessor.ngc microProcessor_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim microProcessor.ngc microProcessor_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.syr" 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim microProcessor.ngc microProcessor_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim microProcessor.ngc microProcessor_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim microProcessor.ngc microProcessor_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/microProcessor.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim microProcessor.ngc microProcessor_synthesis.v 

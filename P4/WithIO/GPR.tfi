@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+GPR instance_name (
+    .clk(clk), 
+    .load(load), 
+    .C_bus(C_bus), 
+    .d_out(d_out)
+    );
+
+

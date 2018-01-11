@@ -1,0 +1,86 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml UART_RX.twx UART_RX.ncd -o UART_RX.twr UART_RX.pcf
+
+Design file:              UART_RX.ncd
+Physical constraint file: UART_RX.pcf
+Device,package,speed:     xc6slx45,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+reset       |    0.655(R)|      FAST  |    0.421(R)|      SLOW  |clk_BUFGP         |   0.000|
+rx          |    0.992(R)|      FAST  |    0.100(R)|      SLOW  |clk_BUFGP         |   0.000|
+s_tick      |    1.797(R)|      SLOW  |   -0.198(R)|      SLOW  |clk_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+dout<0>     |         7.250(R)|      SLOW  |         3.868(R)|      FAST  |clk_BUFGP         |   0.000|
+dout<1>     |         7.256(R)|      SLOW  |         3.874(R)|      FAST  |clk_BUFGP         |   0.000|
+dout<2>     |         7.180(R)|      SLOW  |         3.813(R)|      FAST  |clk_BUFGP         |   0.000|
+dout<3>     |         7.183(R)|      SLOW  |         3.816(R)|      FAST  |clk_BUFGP         |   0.000|
+dout<4>     |         7.065(R)|      SLOW  |         3.770(R)|      FAST  |clk_BUFGP         |   0.000|
+dout<5>     |         7.210(R)|      SLOW  |         3.874(R)|      FAST  |clk_BUFGP         |   0.000|
+dout<6>     |         7.210(R)|      SLOW  |         3.874(R)|      FAST  |clk_BUFGP         |   0.000|
+dout<7>     |         7.207(R)|      SLOW  |         3.871(R)|      FAST  |clk_BUFGP         |   0.000|
+rx_done_tick|         8.959(R)|      SLOW  |         4.473(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.597|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+s_tick         |rx_done_tick   |    7.985|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Apr 20 13:33:15 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 266 MB
+
+
+

@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon May 08 18:12:53 2017
+# Process ID: 2332
+# Log file: E:/UOM/Xilinx Workspace/Processor/planAhead_run_2/planAhead.log
+# Journal file: E:/UOM/Xilinx Workspace/Processor/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {E:/UOM/Xilinx Workspace/Processor/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1

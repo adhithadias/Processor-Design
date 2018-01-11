@@ -1,0 +1,2 @@
+vhdtdtfi -lang verilog -prj Start -o "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/MBRU.tfi" -lib work "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start//MBRU.v" -module MBRU -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/MBRU.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/MBRU.syr" 

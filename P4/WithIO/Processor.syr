@@ -1,0 +1,582 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Processor.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Processor.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Processor"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : Processor
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\adhit\Desktop\Processor Design\Projects\Start\PC.v" into library work
+Parsing module <PC>.
+Analyzing Verilog file "C:\Users\adhit\Desktop\Processor Design\Projects\Start\microProcessor.v" into library work
+Parsing module <microProcessor>.
+Analyzing Verilog file "C:\Users\adhit\Desktop\Processor Design\Projects\Start\MDR.v" into library work
+Parsing module <MDR>.
+Analyzing Verilog file "C:\Users\adhit\Desktop\Processor Design\Projects\Start\MBRU.v" into library work
+Parsing module <MBRU>.
+Analyzing Verilog file "C:\Users\adhit\Desktop\Processor Design\Projects\Start\MAR.v" into library work
+Parsing module <MAR>.
+Analyzing Verilog file "C:\Users\adhit\Desktop\Processor Design\Projects\Start\GPR.v" into library work
+Parsing module <GPR>.
+Analyzing Verilog file "C:\Users\adhit\Desktop\Processor Design\Projects\Start\decoder.v" into library work
+Parsing module <decoder>.
+Analyzing Verilog file "C:\Users\adhit\Desktop\Processor Design\Projects\Start\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "C:\Users\adhit\Desktop\Processor Design\Projects\Start\Processor.v" into library work
+Parsing module <Processor>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Processor>.
+
+Elaborating module <MAR>.
+
+Elaborating module <MDR>.
+
+Elaborating module <PC>.
+
+Elaborating module <MBRU>.
+
+Elaborating module <GPR>.
+
+Elaborating module <decoder>.
+WARNING:HDLCompiler:91 - "C:\Users\adhit\Desktop\Processor Design\Projects\Start\decoder.v" Line 28: Signal <MDR> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\adhit\Desktop\Processor Design\Projects\Start\decoder.v" Line 30: Signal <PC> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\adhit\Desktop\Processor Design\Projects\Start\decoder.v" Line 32: Signal <MBRU> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\adhit\Desktop\Processor Design\Projects\Start\decoder.v" Line 34: Signal <R1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\adhit\Desktop\Processor Design\Projects\Start\decoder.v" Line 36: Signal <R2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\adhit\Desktop\Processor Design\Projects\Start\decoder.v" Line 38: Signal <R3> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\adhit\Desktop\Processor Design\Projects\Start\decoder.v" Line 40: Signal <R4> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\adhit\Desktop\Processor Design\Projects\Start\decoder.v" Line 42: Signal <R> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <microProcessor>.
+WARNING:HDLCompiler:872 - "C:\Users\adhit\Desktop\Processor Design\Projects\Start\microProcessor.v" Line 48: Using initial value of ROM since it is never assigned
+WARNING:HDLCompiler:91 - "C:\Users\adhit\Desktop\Processor Design\Projects\Start\microProcessor.v" Line 43: Signal <Z_flag> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\adhit\Desktop\Processor Design\Projects\Start\microProcessor.v" Line 44: Signal <ROM> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\adhit\Desktop\Processor Design\Projects\Start\microProcessor.v" Line 45: Signal <ROM> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <ALU>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Processor>.
+    Related source file is "C:\Users\adhit\Desktop\Processor Design\Projects\Start\Processor.v".
+    Summary:
+	no macro.
+Unit <Processor> synthesized.
+
+Synthesizing Unit <MAR>.
+    Related source file is "C:\Users\adhit\Desktop\Processor Design\Projects\Start\MAR.v".
+    Found 24-bit register for signal <data_addr>.
+    Summary:
+	inferred  24 D-type flip-flop(s).
+Unit <MAR> synthesized.
+
+Synthesizing Unit <MDR>.
+    Related source file is "C:\Users\adhit\Desktop\Processor Design\Projects\Start\MDR.v".
+    Found 8-bit register for signal <data_out>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <MDR> synthesized.
+
+Synthesizing Unit <PC>.
+    Related source file is "C:\Users\adhit\Desktop\Processor Design\Projects\Start\PC.v".
+    Found 9-bit register for signal <ins_addr>.
+    Found 9-bit adder for signal <ins_addr[8]_GND_4_o_add_1_OUT> created at line 24.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <PC> synthesized.
+
+Synthesizing Unit <MBRU>.
+    Related source file is "C:\Users\adhit\Desktop\Processor Design\Projects\Start\MBRU.v".
+    Found 8-bit register for signal <ins_out>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <MBRU> synthesized.
+
+Synthesizing Unit <GPR>.
+    Related source file is "C:\Users\adhit\Desktop\Processor Design\Projects\Start\GPR.v".
+    Found 24-bit register for signal <d_out>.
+    Summary:
+	inferred  24 D-type flip-flop(s).
+Unit <GPR> synthesized.
+
+Synthesizing Unit <decoder>.
+    Related source file is "C:\Users\adhit\Desktop\Processor Design\Projects\Start\decoder.v".
+    Found 24-bit 8-to-1 multiplexer for signal <_n0040> created at line 22.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <decoder> synthesized.
+
+Synthesizing Unit <microProcessor>.
+    Related source file is "C:\Users\adhit\Desktop\Processor Design\Projects\Start\microProcessor.v".
+        JMNZ1 = 8'b00010110
+        JMNZY1 = 8'b00010111
+        JMNZN1 = 8'b00011001
+WARNING:Xst:647 - Input <JUMP> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <next_addr>.
+    Found 64x31-bit Read Only RAM for signal <next_addr[5]_X_8_o_wide_mux_5_OUT>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <microProcessor> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:\Users\adhit\Desktop\Processor Design\Projects\Start\ALU.v".
+        ADD = 4'b0001
+        SUB = 4'b0010
+        PASSATOC = 4'b0111
+        PASSBTOC = 4'b1000
+        INCAC = 4'b1001
+        DECAC = 4'b1010
+        LSHFT1 = 4'b0011
+        LSHFT2 = 4'b0100
+        LSHFT8 = 4'b0101
+        RSHFT4 = 4'b0110
+        RESET = 4'b1011
+    Found 24-bit subtractor for signal <A_bus[23]_B_bus[23]_sub_2_OUT> created at line 33.
+    Found 24-bit subtractor for signal <A_bus[23]_GND_9_o_sub_5_OUT> created at line 51.
+    Found 24-bit adder for signal <A_bus[23]_B_bus[23]_add_0_OUT> created at line 30.
+    Found 24-bit adder for signal <A_bus[23]_GND_9_o_add_3_OUT> created at line 49.
+    Found 24-bit 13-to-1 multiplexer for signal <C_bus> created at line 29.
+WARNING:Xst:737 - Found 1-bit latch for signal <Z_flag>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Latch(s).
+	inferred  23 Multiplexer(s).
+Unit <ALU> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 64x31-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 3
+ 24-bit addsub                                         : 1
+ 24-bit subtractor                                     : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 11
+ 24-bit register                                       : 7
+ 8-bit register                                        : 3
+ 9-bit register                                        : 1
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Multiplexers                                         : 29
+ 1-bit 2-to-1 multiplexer                              : 3
+ 24-bit 2-to-1 multiplexer                             : 21
+ 24-bit 8-to-1 multiplexer                             : 1
+ 31-bit 2-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 2
+ 9-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <PC>.
+The following registers are absorbed into counter <ins_addr>: 1 register on signal <ins_addr>.
+Unit <PC> synthesized (advanced).
+
+Synthesizing (advanced) Unit <microProcessor>.
+INFO:Xst:3231 - The small RAM <Mram_next_addr[5]_X_8_o_wide_mux_5_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 31-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <next_addr<5:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <microProcessor> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 64x31-bit single-port distributed Read Only RAM       : 1
+# Adders/Subtractors                                   : 2
+ 24-bit addsub                                         : 1
+ 24-bit subtractor                                     : 1
+# Counters                                             : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 192
+ Flip-Flops                                            : 192
+# Multiplexers                                         : 28
+ 1-bit 2-to-1 multiplexer                              : 3
+ 24-bit 2-to-1 multiplexer                             : 21
+ 24-bit 8-to-1 multiplexer                             : 1
+ 31-bit 2-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <MBRU> ...
+
+Optimizing unit <MAR> ...
+
+Optimizing unit <Processor> ...
+
+Optimizing unit <MDR> ...
+
+Optimizing unit <microProcessor> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Processor, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 201
+ Flip-Flops                                            : 201
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Processor.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 512
+#      GND                         : 1
+#      LUT2                        : 19
+#      LUT3                        : 62
+#      LUT4                        : 35
+#      LUT5                        : 28
+#      LUT6                        : 255
+#      MUXCY                       : 54
+#      VCC                         : 1
+#      XORCY                       : 57
+# FlipFlops/Latches                : 202
+#      FD_1                        : 8
+#      FDE                         : 193
+#      LD                          : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 59
+#      IBUF                        : 16
+#      OBUF                        : 43
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             202  out of  54576     0%  
+ Number of Slice LUTs:                  399  out of  27288     1%  
+    Number used as Logic:               399  out of  27288     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    555
+   Number with an unused Flip Flop:     353  out of    555    63%  
+   Number with an unused LUT:           156  out of    555    28%  
+   Number of fully used LUT-FF pairs:    46  out of    555     8%  
+   Number of unique control sets:        12
+
+IO Utilization: 
+ Number of IOs:                          60
+ Number of bonded IOBs:                  60  out of    218    27%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------------------------+--------------------------+-------+
+Clock Signal                                                             | Clock buffer(FF name)    | Load  |
+-------------------------------------------------------------------------+--------------------------+-------+
+ALU_24bit/oper[3]_PWR_11_o_Mux_8_o(ALU_24bit/oper[3]_PWR_11_o_Mux_8_o1:O)| NONE(*)(ALU_24bit/Z_flag)| 1     |
+clk                                                                      | BUFGP                    | 201   |
+-------------------------------------------------------------------------+--------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 19.029ns (Maximum Frequency: 52.551MHz)
+   Minimum input arrival time before clock: 2.354ns
+   Maximum output required time after clock: 8.284ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 19.029ns (frequency: 52.551MHz)
+  Total number of paths / destination ports: 4641504 / 386
+-------------------------------------------------------------------------
+Delay:               9.515ns (Levels of Logic = 17)
+  Source:            controlStore/next_addr_1 (FF)
+  Destination:       PC_reg/ins_addr_8 (FF)
+  Source Clock:      clk falling
+  Destination Clock: clk rising
+
+  Data Path: controlStore/next_addr_1 to PC_reg/ins_addr_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q            31   0.447   1.622  controlStore/next_addr_1 (controlStore/next_addr_1)
+     LUT6:I1->O           78   0.203   1.733  controlStore_Mram_next_addr[5]_X_8_o_wide_mux_5_OUT110 (controlStore/next_addr[5]_X_8_o_wide_mux_5_OUT<0>)
+     LUT3:I2->O            1   0.205   0.580  decoder_4to16/Mmux__n0040_37_SW0 (N6)
+     LUT6:I5->O            3   0.205   0.755  decoder_4to16/Mmux__n0040_37 (decoder_4to16/Mmux__n0040_37)
+     LUT5:I3->O            2   0.203   0.617  decoder_4to16/Mmux_B_bus12 (B_bus<0>)
+     LUT6:I5->O            1   0.205   0.580  ALU_24bit/Mmux_C_bus12_A14 (ALU_24bit/Mmux_C_bus12_A11)
+     LUT5:I4->O            1   0.205   0.000  ALU_24bit/Mmux_C_bus12_rs_lut<0> (ALU_24bit/Mmux_C_bus12_rs_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  ALU_24bit/Mmux_C_bus12_rs_cy<0> (ALU_24bit/Mmux_C_bus12_rs_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  ALU_24bit/Mmux_C_bus12_rs_cy<1> (ALU_24bit/Mmux_C_bus12_rs_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  ALU_24bit/Mmux_C_bus12_rs_cy<2> (ALU_24bit/Mmux_C_bus12_rs_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  ALU_24bit/Mmux_C_bus12_rs_cy<3> (ALU_24bit/Mmux_C_bus12_rs_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  ALU_24bit/Mmux_C_bus12_rs_cy<4> (ALU_24bit/Mmux_C_bus12_rs_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  ALU_24bit/Mmux_C_bus12_rs_cy<5> (ALU_24bit/Mmux_C_bus12_rs_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  ALU_24bit/Mmux_C_bus12_rs_cy<6> (ALU_24bit/Mmux_C_bus12_rs_cy<6>)
+     XORCY:CI->O           9   0.180   0.830  ALU_24bit/Mmux_C_bus12_rs_xor<7> (C_bus<7>)
+     LUT4:I3->O            1   0.205   0.000  PC_reg/Mcount_ins_addr_lut<7> (PC_reg/Mcount_ins_addr_lut<7>)
+     MUXCY:S->O            0   0.172   0.000  PC_reg/Mcount_ins_addr_cy<7> (PC_reg/Mcount_ins_addr_cy<7>)
+     XORCY:CI->O           1   0.180   0.000  PC_reg/Mcount_ins_addr_xor<8> (PC_reg/Mcount_ins_addr8)
+     FDE:D                     0.102          PC_reg/ins_addr_8
+    ----------------------------------------
+    Total                      9.515ns (2.798ns logic, 6.717ns route)
+                                       (29.4% logic, 70.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              2.354ns (Levels of Logic = 2)
+  Source:            data_in<7> (PAD)
+  Destination:       MDR_reg/data_out_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: data_in<7> to MDR_reg/data_out_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.827  data_in_7_IBUF (data_in_7_IBUF)
+     LUT4:I0->O            1   0.203   0.000  MDR_reg/Mmux_data_out[7]_data_in[7]_mux_2_OUT81 (MDR_reg/data_out[7]_data_in[7]_mux_2_OUT<7>)
+     FDE:D                     0.102          MDR_reg/data_out_7
+    ----------------------------------------
+    Total                      2.354ns (1.527ns logic, 0.827ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 69 / 43
+-------------------------------------------------------------------------
+Offset:              8.284ns (Levels of Logic = 4)
+  Source:            controlStore/next_addr_5 (FF)
+  Destination:       write (PAD)
+  Source Clock:      clk falling
+
+  Data Path: controlStore/next_addr_5 to write
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q            29   0.447   1.250  controlStore/next_addr_5 (controlStore/next_addr_5)
+     LUT3:I2->O            4   0.205   0.684  controlStore/next_addr[7]_GND_8_o_equal_7_o<7>_SW0 (N4)
+     LUT6:I5->O          182   0.205   2.142  controlStore/next_addr[7]_GND_8_o_equal_7_o<7> (controlStore/next_addr[7]_GND_8_o_equal_7_o)
+     LUT2:I0->O            1   0.203   0.579  controlStore/Mmux_MIR141 (finish_OBUF)
+     OBUF:I->O                 2.571          finish_OBUF (finish)
+    ----------------------------------------
+    Total                      8.284ns (3.631ns logic, 4.653ns route)
+                                       (43.8% logic, 56.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock ALU_24bit/oper[3]_PWR_11_o_Mux_8_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |   11.233|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+----------------------------------+---------+---------+---------+---------+
+                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------+---------+---------+---------+---------+
+ALU_24bit/oper[3]_PWR_11_o_Mux_8_o|         |    2.444|    1.422|         |
+clk                               |    6.765|    9.515|    5.477|         |
+----------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.68 secs
+ 
+--> 
+
+Total memory usage is 294096 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   14 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+DRAM instance_name (
+    .clk(clk), 
+    .write(write), 
+    .data_in(data_in), 
+    .data_addr(data_addr), 
+    .data_out(data_out)
+    );
+
+

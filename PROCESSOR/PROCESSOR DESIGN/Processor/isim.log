@@ -1,0 +1,151 @@
+ISim log file
+Running: E:\UOM\Xilinx Workspace\Processor\ROOT_SYSTEM_test_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM_test_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+WARNING: File "E:/UOM/Xilinx Workspace/Processor/CPU.v" Line 27.  For instance cpu/MAR/, width 24 of formal port OUT is not equal to width 16 of actual signal RAM_ADDR.
+WARNING: File "E:/UOM/Xilinx Workspace/Processor/CPU.v" Line 26.  For instance cpu/DMUX_A/, width 24 of formal port B is not equal to width 8 of actual signal RAM_OUT.
+WARNING: File "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.v" Line 35.  For instance uut/IO/, width 10 of formal port ram_addr is not equal to width 16 of actual signal ram_addr_io.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Block Memory Generator CORE Generator module ROOT_SYSTEM_test.uut.Ram.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+WARNING: File "E:/UOM/Xilinx Workspace/Processor/CPU.v" Line 27.  For instance cpu/MAR/, width 24 of formal port OUT is not equal to width 16 of actual signal RAM_ADDR.
+WARNING: File "E:/UOM/Xilinx Workspace/Processor/CPU.v" Line 26.  For instance cpu/DMUX_A/, width 24 of formal port B is not equal to width 8 of actual signal RAM_OUT.
+WARNING: File "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.v" Line 35.  For instance uut/IO/, width 10 of formal port ram_addr is not equal to width 16 of actual signal ram_addr_io.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Block Memory Generator CORE Generator module ROOT_SYSTEM_test.uut.Ram.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+WARNING: File "E:/UOM/Xilinx Workspace/Processor/CPU.v" Line 27.  For instance cpu/MAR/, width 24 of formal port OUT is not equal to width 16 of actual signal RAM_ADDR.
+WARNING: File "E:/UOM/Xilinx Workspace/Processor/CPU.v" Line 26.  For instance cpu/DMUX_A/, width 24 of formal port B is not equal to width 8 of actual signal RAM_OUT.
+WARNING: File "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.v" Line 35.  For instance uut/IO/, width 10 of formal port ram_addr is not equal to width 16 of actual signal ram_addr_io.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Block Memory Generator CORE Generator module ROOT_SYSTEM_test.uut.Ram.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+WARNING: File "E:/UOM/Xilinx Workspace/Processor/CPU.v" Line 27.  For instance cpu/MAR/, width 24 of formal port OUT is not equal to width 16 of actual signal RAM_ADDR.
+WARNING: File "E:/UOM/Xilinx Workspace/Processor/CPU.v" Line 26.  For instance cpu/DMUX_A/, width 24 of formal port B is not equal to width 8 of actual signal RAM_OUT.
+WARNING: File "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.v" Line 35.  For instance uut/IO/, width 10 of formal port ram_addr is not equal to width 16 of actual signal ram_addr_io.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Block Memory Generator CORE Generator module ROOT_SYSTEM_test.uut.Ram.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Finished circuit initialization process.
+# run 1.00us
+# run 1.00us
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+WARNING: File "E:/UOM/Xilinx Workspace/Processor/CPU.v" Line 27.  For instance cpu/MAR/, width 24 of formal port OUT is not equal to width 16 of actual signal RAM_ADDR.
+WARNING: File "E:/UOM/Xilinx Workspace/Processor/CPU.v" Line 26.  For instance cpu/DMUX_A/, width 24 of formal port B is not equal to width 8 of actual signal RAM_OUT.
+WARNING: File "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.v" Line 35.  For instance uut/IO/, width 10 of formal port ram_addr is not equal to width 16 of actual signal ram_addr_io.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Block Memory Generator CORE Generator module ROOT_SYSTEM_test.uut.Ram.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Finished circuit initialization process.
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+WARNING: File "E:/UOM/Xilinx Workspace/Processor/CPU.v" Line 27.  For instance cpu/MAR/, width 24 of formal port OUT is not equal to width 16 of actual signal RAM_ADDR.
+WARNING: File "E:/UOM/Xilinx Workspace/Processor/CPU.v" Line 26.  For instance cpu/DMUX_A/, width 24 of formal port B is not equal to width 8 of actual signal RAM_OUT.
+WARNING: File "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.v" Line 35.  For instance uut/IO/, width 10 of formal port ram_addr is not equal to width 16 of actual signal ram_addr_io.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Block Memory Generator CORE Generator module ROOT_SYSTEM_test.uut.Ram.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Finished circuit initialization process.
+# run 1.00us
+# run 1.00us
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+WARNING: File "E:/UOM/Xilinx Workspace/Processor/CPU.v" Line 27.  For instance cpu/MAR/, width 24 of formal port OUT is not equal to width 16 of actual signal RAM_ADDR.
+WARNING: File "E:/UOM/Xilinx Workspace/Processor/CPU.v" Line 26.  For instance cpu/DMUX_A/, width 24 of formal port B is not equal to width 8 of actual signal RAM_OUT.
+WARNING: File "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.v" Line 35.  For instance uut/IO/, width 10 of formal port ram_addr is not equal to width 16 of actual signal ram_addr_io.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Block Memory Generator CORE Generator module ROOT_SYSTEM_test.uut.Ram.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Finished circuit initialization process.
+# run 1.00us
+# run 1.00us

@@ -1,0 +1,976 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Processor.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Processor.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Processor"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : Processor
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\UOM\Xilinx Workspace\Processor\Start\PC.v" into library work
+Parsing module <PC>.
+Analyzing Verilog file "E:\UOM\Xilinx Workspace\Processor\Start\microProcessor.v" into library work
+Parsing module <microProcessor>.
+Analyzing Verilog file "E:\UOM\Xilinx Workspace\Processor\Start\MDR.v" into library work
+Parsing module <MDR>.
+Analyzing Verilog file "E:\UOM\Xilinx Workspace\Processor\Start\MBRU.v" into library work
+Parsing module <MBRU>.
+Analyzing Verilog file "E:\UOM\Xilinx Workspace\Processor\Start\MAR.v" into library work
+Parsing module <MAR>.
+Analyzing Verilog file "E:\UOM\Xilinx Workspace\Processor\Start\GPR.v" into library work
+Parsing module <GPR>.
+Analyzing Verilog file "E:\UOM\Xilinx Workspace\Processor\Start\decoder.v" into library work
+Parsing module <decoder>.
+Analyzing Verilog file "E:\UOM\Xilinx Workspace\Processor\Start\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "E:\UOM\Xilinx Workspace\Processor\Start\Processor.v" into library work
+Parsing module <Processor>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Processor>.
+
+Elaborating module <MAR>.
+
+Elaborating module <MDR>.
+
+Elaborating module <PC>.
+
+Elaborating module <MBRU>.
+
+Elaborating module <microProcessor>.
+WARNING:HDLCompiler:91 - "E:\UOM\Xilinx Workspace\Processor\Start\microProcessor.v" Line 41: Signal <JUMP> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\UOM\Xilinx Workspace\Processor\Start\microProcessor.v" Line 43: Signal <Z_flag> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\UOM\Xilinx Workspace\Processor\Start\microProcessor.v" Line 44: Signal <control_store> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\UOM\Xilinx Workspace\Processor\Start\microProcessor.v" Line 47: Signal <control_store> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:634 - "E:\UOM\Xilinx Workspace\Processor\Start\microProcessor.v" Line 31: Net <control_store[0][30]> does not have a driver.
+
+Elaborating module <GPR>.
+
+Elaborating module <decoder>.
+WARNING:HDLCompiler:91 - "E:\UOM\Xilinx Workspace\Processor\Start\decoder.v" Line 34: Signal <MDR> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\UOM\Xilinx Workspace\Processor\Start\decoder.v" Line 36: Signal <PC> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\UOM\Xilinx Workspace\Processor\Start\decoder.v" Line 38: Signal <MBRU> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\UOM\Xilinx Workspace\Processor\Start\decoder.v" Line 40: Signal <R1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\UOM\Xilinx Workspace\Processor\Start\decoder.v" Line 42: Signal <R2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\UOM\Xilinx Workspace\Processor\Start\decoder.v" Line 44: Signal <R3> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\UOM\Xilinx Workspace\Processor\Start\decoder.v" Line 46: Signal <R4> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\UOM\Xilinx Workspace\Processor\Start\decoder.v" Line 48: Signal <R> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <ALU>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Processor>.
+    Related source file is "E:\UOM\Xilinx Workspace\Processor\Start\Processor.v".
+WARNING:Xst:647 - Input <enable> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <Processor> synthesized.
+
+Synthesizing Unit <MAR>.
+    Related source file is "E:\UOM\Xilinx Workspace\Processor\Start\MAR.v".
+    Found 24-bit register for signal <data_addr>.
+    Summary:
+	inferred  24 D-type flip-flop(s).
+Unit <MAR> synthesized.
+
+Synthesizing Unit <MDR>.
+    Related source file is "E:\UOM\Xilinx Workspace\Processor\Start\MDR.v".
+    Found 8-bit register for signal <data_out>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <MDR> synthesized.
+
+Synthesizing Unit <PC>.
+    Related source file is "E:\UOM\Xilinx Workspace\Processor\Start\PC.v".
+        PCWIDTH = 9
+    Found 9-bit register for signal <ins_addr>.
+    Found 9-bit adder for signal <ins_addr[8]_GND_4_o_add_1_OUT> created at line 25.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <PC> synthesized.
+
+Synthesizing Unit <MBRU>.
+    Related source file is "E:\UOM\Xilinx Workspace\Processor\Start\MBRU.v".
+    Found 8-bit register for signal <ins_out>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <MBRU> synthesized.
+
+Synthesizing Unit <microProcessor>.
+    Related source file is "E:\UOM\Xilinx Workspace\Processor\Start\microProcessor.v".
+        MIRWIDTH = 31
+        BYTEWIDTH = 8
+        JMPZY1 = 9'b000110010
+        JMPZN1 = 9'b000110000
+WARNING:Xst:653 - Signal <control_store<0>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<1>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<2>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<3>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<4>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<5>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<6>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<7>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<8>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<9>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<10>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<11>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<12>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<13>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<14>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<15>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<16>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<17>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<18>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<19>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<20>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<21>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<22>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<23>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<24>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<25>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<26>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<27>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<28>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<29>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<30>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<31>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<32>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<33>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<34>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<35>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<36>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<37>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<38>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<39>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<40>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<41>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<42>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<43>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<44>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<45>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<46>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<47>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<48>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<49>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<50>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<51>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<52>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<53>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<54>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<55>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<56>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<57>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<58>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<59>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<60>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<61>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<62>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<63>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<64>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<65>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<66>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<67>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<68>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<69>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<70>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<71>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<72>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<73>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<74>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<75>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<76>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<77>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<78>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<79>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<80>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<81>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<82>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<83>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<84>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<85>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<86>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<87>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<88>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<89>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<90>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<91>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<92>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<93>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<94>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<95>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<96>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<97>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<98>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<99>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<100>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<101>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<102>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<103>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<104>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<105>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<106>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<107>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<108>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<109>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<110>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<111>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<112>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<113>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<114>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<115>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<116>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<117>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<118>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<119>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<120>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<121>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<122>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<123>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<124>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<125>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<126>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<127>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<128>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<129>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<130>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<131>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<132>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<133>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<134>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<135>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<136>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<137>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<138>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<139>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<140>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<141>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<142>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<143>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<144>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<145>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<146>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<147>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<148>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<149>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<150>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<151>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<152>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<153>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<154>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<155>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<156>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<157>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<158>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<159>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<160>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<161>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<162>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<163>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<164>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<165>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<166>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<167>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<168>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<169>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<170>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<171>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<172>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<173>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<174>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<175>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<176>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<177>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<178>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<179>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<180>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<181>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<182>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<183>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<184>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<185>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<186>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<187>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<188>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<189>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<190>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<191>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<192>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<193>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<194>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<195>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<196>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<197>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<198>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<199>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<200>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<201>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<202>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<203>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<204>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<205>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<206>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<207>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<208>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<209>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<210>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<211>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<212>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<213>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<214>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<215>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<216>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<217>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<218>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<219>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<220>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<221>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<222>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<223>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<224>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<225>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<226>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<227>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<228>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<229>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<230>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<231>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<232>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<233>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<234>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<235>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<236>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<237>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<238>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<239>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<240>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<241>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<242>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<243>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<244>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<245>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<246>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<247>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<248>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<249>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<250>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<251>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<252>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<253>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<254>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <control_store<255>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <microProcessor> synthesized.
+
+Synthesizing Unit <GPR>.
+    Related source file is "E:\UOM\Xilinx Workspace\Processor\Start\GPR.v".
+    Found 24-bit register for signal <d_out>.
+    Summary:
+	inferred  24 D-type flip-flop(s).
+Unit <GPR> synthesized.
+
+Synthesizing Unit <decoder>.
+    Related source file is "E:\UOM\Xilinx Workspace\Processor\Start\decoder.v".
+        GPRWIDTH = 24
+        PCWIDTH = 9
+        BYTEWIDTH = 8
+        CONTROLBITS = 4
+    Found 24-bit 8-to-1 multiplexer for signal <_n0040> created at line 27.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <decoder> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "E:\UOM\Xilinx Workspace\Processor\Start\ALU.v".
+        ADD = 4'b0001
+        SUB = 4'b0010
+        PASSATOC = 4'b0111
+        PASSBTOC = 4'b1000
+        INCAC = 4'b1001
+        DECAC = 4'b1010
+        LSHFT1 = 4'b0011
+        LSHFT2 = 4'b0100
+        LSHFT8 = 4'b0101
+        RSHFT4 = 4'b0110
+    Found 24-bit subtractor for signal <A_bus[23]_B_bus[23]_sub_2_OUT> created at line 33.
+    Found 24-bit subtractor for signal <A_bus[23]_GND_9_o_sub_5_OUT> created at line 51.
+    Found 24-bit adder for signal <A_bus[23]_B_bus[23]_add_0_OUT> created at line 30.
+    Found 24-bit adder for signal <A_bus[23]_GND_9_o_add_3_OUT> created at line 49.
+    Found 24-bit 13-to-1 multiplexer for signal <C_bus> created at line 29.
+WARNING:Xst:737 - Found 1-bit latch for signal <Z_flag>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Latch(s).
+	inferred  23 Multiplexer(s).
+Unit <ALU> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 24-bit addsub                                         : 1
+ 24-bit subtractor                                     : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 10
+ 24-bit register                                       : 7
+ 8-bit register                                        : 2
+ 9-bit register                                        : 1
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Multiplexers                                         : 27
+ 1-bit 2-to-1 multiplexer                              : 3
+ 24-bit 2-to-1 multiplexer                             : 21
+ 24-bit 8-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <d_out_0> has a constant value of 0 in block <R4_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_1> has a constant value of 0 in block <R4_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_2> has a constant value of 0 in block <R4_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_3> has a constant value of 0 in block <R4_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_4> has a constant value of 0 in block <R4_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_5> has a constant value of 0 in block <R4_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_6> has a constant value of 0 in block <R4_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_7> has a constant value of 0 in block <R4_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_8> has a constant value of 0 in block <R4_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_9> has a constant value of 0 in block <R4_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_10> has a constant value of 0 in block <R4_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_11> has a constant value of 0 in block <R4_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_12> has a constant value of 0 in block <R4_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_13> has a constant value of 0 in block <R4_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_14> has a constant value of 0 in block <R4_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_15> has a constant value of 0 in block <R4_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_16> has a constant value of 0 in block <R4_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_17> has a constant value of 0 in block <R4_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_18> has a constant value of 0 in block <R4_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_19> has a constant value of 0 in block <R4_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_20> has a constant value of 0 in block <R4_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_21> has a constant value of 0 in block <R4_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_22> has a constant value of 0 in block <R4_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_23> has a constant value of 0 in block <R4_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_0> has a constant value of 0 in block <R3_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_1> has a constant value of 0 in block <R3_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_2> has a constant value of 0 in block <R3_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_3> has a constant value of 0 in block <R3_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_4> has a constant value of 0 in block <R3_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_5> has a constant value of 0 in block <R3_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_6> has a constant value of 0 in block <R3_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_7> has a constant value of 0 in block <R3_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_8> has a constant value of 0 in block <R3_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_9> has a constant value of 0 in block <R3_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_10> has a constant value of 0 in block <R3_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_11> has a constant value of 0 in block <R3_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_12> has a constant value of 0 in block <R3_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_13> has a constant value of 0 in block <R3_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_14> has a constant value of 0 in block <R3_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_15> has a constant value of 0 in block <R3_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_16> has a constant value of 0 in block <R3_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_17> has a constant value of 0 in block <R3_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_18> has a constant value of 0 in block <R3_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_19> has a constant value of 0 in block <R3_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_20> has a constant value of 0 in block <R3_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_21> has a constant value of 0 in block <R3_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_22> has a constant value of 0 in block <R3_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_23> has a constant value of 0 in block <R3_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_0> has a constant value of 0 in block <AC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_1> has a constant value of 0 in block <AC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_2> has a constant value of 0 in block <AC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_3> has a constant value of 0 in block <AC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_4> has a constant value of 0 in block <AC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_5> has a constant value of 0 in block <AC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_6> has a constant value of 0 in block <AC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_7> has a constant value of 0 in block <AC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_8> has a constant value of 0 in block <AC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_9> has a constant value of 0 in block <AC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_10> has a constant value of 0 in block <AC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_11> has a constant value of 0 in block <AC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_12> has a constant value of 0 in block <AC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_13> has a constant value of 0 in block <AC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_14> has a constant value of 0 in block <AC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_15> has a constant value of 0 in block <AC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_16> has a constant value of 0 in block <AC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_17> has a constant value of 0 in block <AC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_18> has a constant value of 0 in block <AC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_19> has a constant value of 0 in block <AC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_20> has a constant value of 0 in block <AC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_21> has a constant value of 0 in block <AC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_22> has a constant value of 0 in block <AC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_23> has a constant value of 0 in block <AC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_0> has a constant value of 0 in block <R_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_1> has a constant value of 0 in block <R_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_2> has a constant value of 0 in block <R_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_3> has a constant value of 0 in block <R_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_4> has a constant value of 0 in block <R_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_5> has a constant value of 0 in block <R_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_6> has a constant value of 0 in block <R_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_7> has a constant value of 0 in block <R_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_8> has a constant value of 0 in block <R_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_9> has a constant value of 0 in block <R_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_10> has a constant value of 0 in block <R_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_11> has a constant value of 0 in block <R_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_12> has a constant value of 0 in block <R_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_13> has a constant value of 0 in block <R_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_14> has a constant value of 0 in block <R_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_15> has a constant value of 0 in block <R_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_16> has a constant value of 0 in block <R_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_17> has a constant value of 0 in block <R_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_18> has a constant value of 0 in block <R_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_19> has a constant value of 0 in block <R_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_20> has a constant value of 0 in block <R_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_21> has a constant value of 0 in block <R_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_22> has a constant value of 0 in block <R_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_23> has a constant value of 0 in block <R_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_addr_8> has a constant value of 0 in block <MAR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_addr_9> has a constant value of 0 in block <MAR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_addr_10> has a constant value of 0 in block <MAR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_addr_11> has a constant value of 0 in block <MAR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_addr_12> has a constant value of 0 in block <MAR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_addr_13> has a constant value of 0 in block <MAR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_addr_14> has a constant value of 0 in block <MAR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_addr_15> has a constant value of 0 in block <MAR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_addr_16> has a constant value of 0 in block <MAR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_addr_17> has a constant value of 0 in block <MAR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_addr_18> has a constant value of 0 in block <MAR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_addr_19> has a constant value of 0 in block <MAR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_addr_20> has a constant value of 0 in block <MAR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_addr_21> has a constant value of 0 in block <MAR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_addr_22> has a constant value of 0 in block <MAR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_addr_23> has a constant value of 0 in block <MAR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ins_addr_0> has a constant value of 0 in block <PC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ins_addr_1> has a constant value of 0 in block <PC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ins_addr_2> has a constant value of 0 in block <PC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ins_addr_3> has a constant value of 0 in block <PC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ins_addr_4> has a constant value of 0 in block <PC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ins_addr_5> has a constant value of 0 in block <PC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ins_addr_6> has a constant value of 0 in block <PC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ins_addr_7> has a constant value of 0 in block <PC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_out_0> has a constant value of 0 in block <MDR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_out_1> has a constant value of 0 in block <MDR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_out_2> has a constant value of 0 in block <MDR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_out_3> has a constant value of 0 in block <MDR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_out_4> has a constant value of 0 in block <MDR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_out_5> has a constant value of 0 in block <MDR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_out_6> has a constant value of 0 in block <MDR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_out_7> has a constant value of 0 in block <MDR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ins_out_0> has a constant value of 0 in block <MBRU_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ins_out_1> has a constant value of 0 in block <MBRU_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ins_out_2> has a constant value of 0 in block <MBRU_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ins_out_3> has a constant value of 0 in block <MBRU_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ins_out_4> has a constant value of 0 in block <MBRU_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ins_out_5> has a constant value of 0 in block <MBRU_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ins_out_6> has a constant value of 0 in block <MBRU_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ins_out_7> has a constant value of 0 in block <MBRU_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_addr_0> has a constant value of 0 in block <MAR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_addr_1> has a constant value of 0 in block <MAR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_addr_2> has a constant value of 0 in block <MAR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_addr_3> has a constant value of 0 in block <MAR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_addr_4> has a constant value of 0 in block <MAR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_addr_5> has a constant value of 0 in block <MAR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_addr_6> has a constant value of 0 in block <MAR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_addr_7> has a constant value of 0 in block <MAR_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_0> has a constant value of 0 in block <R2_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_1> has a constant value of 0 in block <R2_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_2> has a constant value of 0 in block <R2_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_3> has a constant value of 0 in block <R2_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_4> has a constant value of 0 in block <R2_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_5> has a constant value of 0 in block <R2_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_6> has a constant value of 0 in block <R2_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_7> has a constant value of 0 in block <R2_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_8> has a constant value of 0 in block <R2_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_9> has a constant value of 0 in block <R2_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_10> has a constant value of 0 in block <R2_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_11> has a constant value of 0 in block <R2_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_12> has a constant value of 0 in block <R2_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_13> has a constant value of 0 in block <R2_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_14> has a constant value of 0 in block <R2_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_15> has a constant value of 0 in block <R2_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_16> has a constant value of 0 in block <R2_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_17> has a constant value of 0 in block <R2_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_18> has a constant value of 0 in block <R2_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_19> has a constant value of 0 in block <R2_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_20> has a constant value of 0 in block <R2_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_21> has a constant value of 0 in block <R2_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_22> has a constant value of 0 in block <R2_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_23> has a constant value of 0 in block <R2_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ins_addr_8> has a constant value of 0 in block <PC_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_0> has a constant value of 0 in block <R1_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_1> has a constant value of 0 in block <R1_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_2> has a constant value of 0 in block <R1_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_3> has a constant value of 0 in block <R1_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_4> has a constant value of 0 in block <R1_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_5> has a constant value of 0 in block <R1_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_6> has a constant value of 0 in block <R1_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_7> has a constant value of 0 in block <R1_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_8> has a constant value of 0 in block <R1_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_9> has a constant value of 0 in block <R1_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_10> has a constant value of 0 in block <R1_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_11> has a constant value of 0 in block <R1_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_12> has a constant value of 0 in block <R1_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_13> has a constant value of 0 in block <R1_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_14> has a constant value of 0 in block <R1_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_15> has a constant value of 0 in block <R1_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_16> has a constant value of 0 in block <R1_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_17> has a constant value of 0 in block <R1_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_18> has a constant value of 0 in block <R1_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_19> has a constant value of 0 in block <R1_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_20> has a constant value of 0 in block <R1_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_21> has a constant value of 0 in block <R1_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_22> has a constant value of 0 in block <R1_reg>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <d_out_23> has a constant value of 0 in block <R1_reg>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <PC>.
+The following registers are absorbed into counter <ins_addr>: 1 register on signal <ins_addr>.
+Unit <PC> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 24-bit addsub                                         : 1
+ 24-bit subtractor                                     : 1
+# Counters                                             : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 184
+ Flip-Flops                                            : 184
+# Multiplexers                                         : 26
+ 1-bit 2-to-1 multiplexer                              : 3
+ 24-bit 2-to-1 multiplexer                             : 21
+ 24-bit 8-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <R_reg/d_out_15> in Unit <Processor> is equivalent to the following 5 FFs/Latches, which will be removed : <AC_reg/d_out_15> <R4_reg/d_out_15> <R3_reg/d_out_15> <R2_reg/d_out_15> <R1_reg/d_out_15> 
+INFO:Xst:2261 - The FF/Latch <R_reg/d_out_20> in Unit <Processor> is equivalent to the following 5 FFs/Latches, which will be removed : <AC_reg/d_out_20> <R4_reg/d_out_20> <R3_reg/d_out_20> <R2_reg/d_out_20> <R1_reg/d_out_20> 
+INFO:Xst:2261 - The FF/Latch <R_reg/d_out_16> in Unit <Processor> is equivalent to the following 5 FFs/Latches, which will be removed : <AC_reg/d_out_16> <R4_reg/d_out_16> <R3_reg/d_out_16> <R2_reg/d_out_16> <R1_reg/d_out_16> 
+INFO:Xst:2261 - The FF/Latch <R_reg/d_out_21> in Unit <Processor> is equivalent to the following 5 FFs/Latches, which will be removed : <AC_reg/d_out_21> <R4_reg/d_out_21> <R3_reg/d_out_21> <R2_reg/d_out_21> <R1_reg/d_out_21> 
+INFO:Xst:2261 - The FF/Latch <R_reg/d_out_17> in Unit <Processor> is equivalent to the following 5 FFs/Latches, which will be removed : <AC_reg/d_out_17> <R4_reg/d_out_17> <R3_reg/d_out_17> <R2_reg/d_out_17> <R1_reg/d_out_17> 
+INFO:Xst:2261 - The FF/Latch <R_reg/d_out_22> in Unit <Processor> is equivalent to the following 5 FFs/Latches, which will be removed : <AC_reg/d_out_22> <R4_reg/d_out_22> <R3_reg/d_out_22> <R2_reg/d_out_22> <R1_reg/d_out_22> 
+INFO:Xst:2261 - The FF/Latch <R_reg/d_out_18> in Unit <Processor> is equivalent to the following 5 FFs/Latches, which will be removed : <AC_reg/d_out_18> <R4_reg/d_out_18> <R3_reg/d_out_18> <R2_reg/d_out_18> <R1_reg/d_out_18> 
+INFO:Xst:2261 - The FF/Latch <R_reg/d_out_23> in Unit <Processor> is equivalent to the following 5 FFs/Latches, which will be removed : <AC_reg/d_out_23> <R4_reg/d_out_23> <R3_reg/d_out_23> <R2_reg/d_out_23> <R1_reg/d_out_23> 
+INFO:Xst:2261 - The FF/Latch <R_reg/d_out_19> in Unit <Processor> is equivalent to the following 5 FFs/Latches, which will be removed : <AC_reg/d_out_19> <R4_reg/d_out_19> <R3_reg/d_out_19> <R2_reg/d_out_19> <R1_reg/d_out_19> 
+INFO:Xst:2261 - The FF/Latch <R_reg/d_out_0> in Unit <Processor> is equivalent to the following 5 FFs/Latches, which will be removed : <AC_reg/d_out_0> <R4_reg/d_out_0> <R3_reg/d_out_0> <R2_reg/d_out_0> <R1_reg/d_out_0> 
+INFO:Xst:2261 - The FF/Latch <R_reg/d_out_1> in Unit <Processor> is equivalent to the following 5 FFs/Latches, which will be removed : <AC_reg/d_out_1> <R4_reg/d_out_1> <R3_reg/d_out_1> <R2_reg/d_out_1> <R1_reg/d_out_1> 
+INFO:Xst:2261 - The FF/Latch <R_reg/d_out_2> in Unit <Processor> is equivalent to the following 5 FFs/Latches, which will be removed : <AC_reg/d_out_2> <R4_reg/d_out_2> <R3_reg/d_out_2> <R2_reg/d_out_2> <R1_reg/d_out_2> 
+INFO:Xst:2261 - The FF/Latch <R_reg/d_out_3> in Unit <Processor> is equivalent to the following 5 FFs/Latches, which will be removed : <AC_reg/d_out_3> <R4_reg/d_out_3> <R3_reg/d_out_3> <R2_reg/d_out_3> <R1_reg/d_out_3> 
+INFO:Xst:2261 - The FF/Latch <R_reg/d_out_4> in Unit <Processor> is equivalent to the following 5 FFs/Latches, which will be removed : <AC_reg/d_out_4> <R4_reg/d_out_4> <R3_reg/d_out_4> <R2_reg/d_out_4> <R1_reg/d_out_4> 
+INFO:Xst:2261 - The FF/Latch <R_reg/d_out_5> in Unit <Processor> is equivalent to the following 5 FFs/Latches, which will be removed : <AC_reg/d_out_5> <R4_reg/d_out_5> <R3_reg/d_out_5> <R2_reg/d_out_5> <R1_reg/d_out_5> 
+INFO:Xst:2261 - The FF/Latch <R_reg/d_out_6> in Unit <Processor> is equivalent to the following 5 FFs/Latches, which will be removed : <AC_reg/d_out_6> <R4_reg/d_out_6> <R3_reg/d_out_6> <R2_reg/d_out_6> <R1_reg/d_out_6> 
+INFO:Xst:2261 - The FF/Latch <R_reg/d_out_7> in Unit <Processor> is equivalent to the following 5 FFs/Latches, which will be removed : <AC_reg/d_out_7> <R4_reg/d_out_7> <R3_reg/d_out_7> <R2_reg/d_out_7> <R1_reg/d_out_7> 
+INFO:Xst:2261 - The FF/Latch <R_reg/d_out_8> in Unit <Processor> is equivalent to the following 5 FFs/Latches, which will be removed : <AC_reg/d_out_8> <R4_reg/d_out_8> <R3_reg/d_out_8> <R2_reg/d_out_8> <R1_reg/d_out_8> 
+INFO:Xst:2261 - The FF/Latch <R_reg/d_out_9> in Unit <Processor> is equivalent to the following 5 FFs/Latches, which will be removed : <AC_reg/d_out_9> <R4_reg/d_out_9> <R3_reg/d_out_9> <R2_reg/d_out_9> <R1_reg/d_out_9> 
+INFO:Xst:2261 - The FF/Latch <R_reg/d_out_10> in Unit <Processor> is equivalent to the following 5 FFs/Latches, which will be removed : <AC_reg/d_out_10> <R4_reg/d_out_10> <R3_reg/d_out_10> <R2_reg/d_out_10> <R1_reg/d_out_10> 
+INFO:Xst:2261 - The FF/Latch <R_reg/d_out_11> in Unit <Processor> is equivalent to the following 5 FFs/Latches, which will be removed : <AC_reg/d_out_11> <R4_reg/d_out_11> <R3_reg/d_out_11> <R2_reg/d_out_11> <R1_reg/d_out_11> 
+INFO:Xst:2261 - The FF/Latch <R_reg/d_out_12> in Unit <Processor> is equivalent to the following 5 FFs/Latches, which will be removed : <AC_reg/d_out_12> <R4_reg/d_out_12> <R3_reg/d_out_12> <R2_reg/d_out_12> <R1_reg/d_out_12> 
+INFO:Xst:2261 - The FF/Latch <R_reg/d_out_13> in Unit <Processor> is equivalent to the following 5 FFs/Latches, which will be removed : <AC_reg/d_out_13> <R4_reg/d_out_13> <R3_reg/d_out_13> <R2_reg/d_out_13> <R1_reg/d_out_13> 
+INFO:Xst:2261 - The FF/Latch <R_reg/d_out_14> in Unit <Processor> is equivalent to the following 5 FFs/Latches, which will be removed : <AC_reg/d_out_14> <R4_reg/d_out_14> <R3_reg/d_out_14> <R2_reg/d_out_14> <R1_reg/d_out_14> 
+WARNING:Xst:1293 - FF/Latch <data_out_0> has a constant value of 0 in block <MDR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_out_1> has a constant value of 0 in block <MDR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_out_2> has a constant value of 0 in block <MDR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_out_3> has a constant value of 0 in block <MDR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_out_4> has a constant value of 0 in block <MDR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_out_5> has a constant value of 0 in block <MDR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_out_6> has a constant value of 0 in block <MDR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_out_7> has a constant value of 0 in block <MDR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ins_out_0> has a constant value of 0 in block <MBRU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ins_out_1> has a constant value of 0 in block <MBRU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ins_out_2> has a constant value of 0 in block <MBRU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ins_out_3> has a constant value of 0 in block <MBRU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ins_out_4> has a constant value of 0 in block <MBRU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ins_out_5> has a constant value of 0 in block <MBRU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ins_out_6> has a constant value of 0 in block <MBRU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ins_out_7> has a constant value of 0 in block <MBRU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_addr_23> has a constant value of 0 in block <MAR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_addr_22> has a constant value of 0 in block <MAR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_addr_21> has a constant value of 0 in block <MAR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_addr_20> has a constant value of 0 in block <MAR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_addr_19> has a constant value of 0 in block <MAR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_addr_18> has a constant value of 0 in block <MAR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_addr_17> has a constant value of 0 in block <MAR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_addr_16> has a constant value of 0 in block <MAR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_addr_15> has a constant value of 0 in block <MAR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_addr_14> has a constant value of 0 in block <MAR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_addr_13> has a constant value of 0 in block <MAR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_addr_12> has a constant value of 0 in block <MAR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_addr_11> has a constant value of 0 in block <MAR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_addr_10> has a constant value of 0 in block <MAR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_addr_9> has a constant value of 0 in block <MAR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_addr_8> has a constant value of 0 in block <MAR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_addr_7> has a constant value of 0 in block <MAR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_addr_6> has a constant value of 0 in block <MAR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_addr_5> has a constant value of 0 in block <MAR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_addr_4> has a constant value of 0 in block <MAR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_addr_3> has a constant value of 0 in block <MAR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_addr_2> has a constant value of 0 in block <MAR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_addr_1> has a constant value of 0 in block <MAR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_addr_0> has a constant value of 0 in block <MAR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <R_reg/d_out_23> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_reg/d_out_22> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_reg/d_out_21> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_reg/d_out_20> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_reg/d_out_19> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_reg/d_out_18> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_reg/d_out_17> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_reg/d_out_16> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_reg/d_out_15> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_reg/d_out_14> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_reg/d_out_13> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_reg/d_out_12> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_reg/d_out_11> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_reg/d_out_10> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_reg/d_out_9> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_reg/d_out_8> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_reg/d_out_7> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_reg/d_out_6> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_reg/d_out_5> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_reg/d_out_4> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_reg/d_out_3> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_reg/d_out_2> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_reg/d_out_1> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_reg/d_out_0> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <ALU_24bit/Z_flag> of sequential type is unconnected in block <Processor>.
+WARNING:Xst:1293 - FF/Latch <PC_reg/ins_addr_0> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PC_reg/ins_addr_1> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PC_reg/ins_addr_2> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PC_reg/ins_addr_3> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PC_reg/ins_addr_4> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PC_reg/ins_addr_5> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PC_reg/ins_addr_6> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PC_reg/ins_addr_7> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <PC_reg/ins_addr_8> has a constant value of 0 in block <Processor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2973 - All outputs of instance <MBRU_reg> of block <MBRU> are unconnected in block <Processor>. Underlying logic will be removed.
+
+Optimizing unit <Processor> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Processor, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Processor.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1
+#      GND                         : 1
+# IO Buffers                       : 42
+#      OBUF                        : 42
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          61
+ Number of bonded IOBs:                  42  out of    218    19%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.67 secs
+ 
+--> 
+
+Total memory usage is 299540 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  539 (   0 filtered)
+Number of infos    :   25 (   0 filtered)
+

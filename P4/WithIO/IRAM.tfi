@@ -1,0 +1,10 @@
+
+
+
+// Instantiate the module
+IRAM instance_name (
+    .ins_addr(ins_addr), 
+    .ins_out(ins_out)
+    );
+
+

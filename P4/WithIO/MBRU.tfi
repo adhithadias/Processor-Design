@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+MBRU instance_name (
+    .clk(clk), 
+    .fetch(fetch), 
+    .ins_in(ins_in), 
+    .ins_out(ins_out)
+    );
+
+

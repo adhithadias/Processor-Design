@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/CentralProcessingUnit.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/CentralProcessingUnit.syr" 

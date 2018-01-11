@@ -1,0 +1,33 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/Competitions and Projects/Processor Design/Final/P4/WithIO/CPU_TEST_isim_beh.exe -prj D:/Competitions and Projects/Processor Design/Final/P4/WithIO/CPU_TEST_beh.prj work.CPU_TEST work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/Competitions and Projects/Processor Design/Final/P4/WithIO/PC.v" into library work
+Analyzing Verilog file "D:/Competitions and Projects/Processor Design/Final/P4/WithIO/microProcessor.v" into library work
+Analyzing Verilog file "D:/Competitions and Projects/Processor Design/Final/P4/WithIO/MDR.v" into library work
+Analyzing Verilog file "D:/Competitions and Projects/Processor Design/Final/P4/WithIO/MBRU.v" into library work
+Analyzing Verilog file "D:/Competitions and Projects/Processor Design/Final/P4/WithIO/MAR.v" into library work
+Analyzing Verilog file "D:/Competitions and Projects/Processor Design/Final/P4/WithIO/GPR.v" into library work
+Analyzing Verilog file "D:/Competitions and Projects/Processor Design/Final/P4/WithIO/decoder.v" into library work
+Analyzing Verilog file "D:/Competitions and Projects/Processor Design/Final/P4/WithIO/ALU.v" into library work
+Analyzing Verilog file "D:/Competitions and Projects/Processor Design/Final/P4/WithIO/UART_TX.v" into library work
+Analyzing Verilog file "D:/Competitions and Projects/Processor Design/Final/P4/WithIO/UART_RX.v" into library work
+Analyzing Verilog file "D:/Competitions and Projects/Processor Design/Final/P4/WithIO/Processor.v" into library work
+Analyzing Verilog file "D:/Competitions and Projects/Processor Design/Final/P4/WithIO/MUX2to1_8bit.v" into library work
+Analyzing Verilog file "D:/Competitions and Projects/Processor Design/Final/P4/WithIO/MUX2to1_16bit.v" into library work
+Analyzing Verilog file "D:/Competitions and Projects/Processor Design/Final/P4/WithIO/MUX2to1.v" into library work
+Analyzing Verilog file "D:/Competitions and Projects/Processor Design/Final/P4/WithIO/ipcore_dir/InsROM.v" into library work
+Analyzing Verilog file "D:/Competitions and Projects/Processor Design/Final/P4/WithIO/ipcore_dir/DataRAM.v" into library work
+Analyzing Verilog file "D:/Competitions and Projects/Processor Design/Final/P4/WithIO/IO_MODULE.v" into library work
+Analyzing Verilog file "D:/Competitions and Projects/Processor Design/Final/P4/WithIO/DMUX1to2_8bit.v" into library work
+Analyzing Verilog file "D:/Competitions and Projects/Processor Design/Final/P4/WithIO/CLOCK_GEN.v" into library work
+Analyzing Verilog file "D:/Competitions and Projects/Processor Design/Final/P4/WithIO/CPU.v" into library work
+Analyzing Verilog file "D:/Competitions and Projects/Processor Design/Final/P4/WithIO/CPU_TEST.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:267 - "D:/Competitions and Projects/Processor Design/Final/P4/WithIO/CPU_TEST.v" Line 35: Cannot find port finish on this module
+ERROR:HDLCompiler:25 - "D:/Competitions and Projects/Processor Design/Final/P4/WithIO/CPU_TEST.v" Line 36: Module <CPU> does not have a port named <enable>.
+ERROR:HDLCompiler:25 - "D:/Competitions and Projects/Processor Design/Final/P4/WithIO/CPU_TEST.v" Line 38: Module <CPU> does not have a port named <finish>.
+WARNING:HDLCompiler:1016 - "D:/Competitions and Projects/Processor Design/Final/P4/WithIO/CPU_TEST.v" Line 35: Port reset is not connected to this instance
+ERROR:Simulator:778 - Static elaboration of top level Verilog design unit(s) in library work failed

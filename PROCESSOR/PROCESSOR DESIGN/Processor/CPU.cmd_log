@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/CPU.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/CPU.syr" 

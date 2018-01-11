@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+ALU instance_name (
+    .A_bus(A_bus), 
+    .B_bus(B_bus), 
+    .oper(oper), 
+    .C_bus(C_bus), 
+    .Z_flag(Z_flag)
+    );
+
+

@@ -1,0 +1,6 @@
+vhdtdtfi -lang verilog -prj Start -o "C:/Users/adhit/Desktop/Processor Design/Projects/Start/DRAM.tfi" -lib work "C:/Users/adhit/Desktop/Processor Design/Projects/Start//DRAM.v" -module DRAM -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Start/DRAM.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Start/DRAM.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim DRAM.ngc DRAM_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Start/DRAM.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Start/DRAM.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim DRAM.ngc DRAM_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/adhit/Desktop/Processor Design/Projects/Start/DRAM.xst" -ofn "C:/Users/adhit/Desktop/Processor Design/Projects/Start/DRAM.syr" 

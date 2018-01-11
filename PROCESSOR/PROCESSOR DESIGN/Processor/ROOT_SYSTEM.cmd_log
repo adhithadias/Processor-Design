@@ -1,0 +1,143 @@
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ROOT_SYSTEM.ucf -p xc6slx45-csg324-3 "ROOT_SYSTEM.ngc" ROOT_SYSTEM.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ngd ROOT_SYSTEM.pcf 
+par -w -intstyle ise -ol high -mt off ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ncd ROOT_SYSTEM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ROOT_SYSTEM.twx ROOT_SYSTEM.ncd -o ROOT_SYSTEM.twr ROOT_SYSTEM.pcf -ucf ROOT_SYSTEM.ucf 
+bitgen -intstyle ise -f ROOT_SYSTEM.ut ROOT_SYSTEM.ncd 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ROOT_SYSTEM.ucf -p xc6slx45-csg324-3 "ROOT_SYSTEM.ngc" ROOT_SYSTEM.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ngd ROOT_SYSTEM.pcf 
+par -w -intstyle ise -ol high -mt off ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ncd ROOT_SYSTEM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ROOT_SYSTEM.twx ROOT_SYSTEM.ncd -o ROOT_SYSTEM.twr ROOT_SYSTEM.pcf -ucf ROOT_SYSTEM.ucf 
+bitgen -intstyle ise -f ROOT_SYSTEM.ut ROOT_SYSTEM.ncd 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ROOT_SYSTEM.ucf -p xc6slx45-csg324-3 "ROOT_SYSTEM.ngc" ROOT_SYSTEM.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ngd ROOT_SYSTEM.pcf 
+par -w -intstyle ise -ol high -mt off ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ncd ROOT_SYSTEM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ROOT_SYSTEM.twx ROOT_SYSTEM.ncd -o ROOT_SYSTEM.twr ROOT_SYSTEM.pcf -ucf ROOT_SYSTEM.ucf 
+bitgen -intstyle ise -f ROOT_SYSTEM.ut ROOT_SYSTEM.ncd 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ROOT_SYSTEM.ucf -p xc6slx45-csg324-3 "ROOT_SYSTEM.ngc" ROOT_SYSTEM.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ngd ROOT_SYSTEM.pcf 
+par -w -intstyle ise -ol high -mt off ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ncd ROOT_SYSTEM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ROOT_SYSTEM.twx ROOT_SYSTEM.ncd -o ROOT_SYSTEM.twr ROOT_SYSTEM.pcf -ucf ROOT_SYSTEM.ucf 
+bitgen -intstyle ise -f ROOT_SYSTEM.ut ROOT_SYSTEM.ncd 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ROOT_SYSTEM.ucf -p xc6slx45-csg324-3 "ROOT_SYSTEM.ngc" ROOT_SYSTEM.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ngd ROOT_SYSTEM.pcf 
+par -w -intstyle ise -ol high -mt off ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ncd ROOT_SYSTEM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ROOT_SYSTEM.twx ROOT_SYSTEM.ncd -o ROOT_SYSTEM.twr ROOT_SYSTEM.pcf -ucf ROOT_SYSTEM.ucf 
+bitgen -intstyle ise -f ROOT_SYSTEM.ut ROOT_SYSTEM.ncd 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ROOT_SYSTEM.ucf -p xc6slx45-csg324-3 "ROOT_SYSTEM.ngc" ROOT_SYSTEM.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ngd ROOT_SYSTEM.pcf 
+par -w -intstyle ise -ol high -mt off ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ncd ROOT_SYSTEM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ROOT_SYSTEM.twx ROOT_SYSTEM.ncd -o ROOT_SYSTEM.twr ROOT_SYSTEM.pcf -ucf ROOT_SYSTEM.ucf 
+bitgen -intstyle ise -f ROOT_SYSTEM.ut ROOT_SYSTEM.ncd 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ROOT_SYSTEM.ucf -p xc6slx45-csg324-3 "ROOT_SYSTEM.ngc" ROOT_SYSTEM.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ngd ROOT_SYSTEM.pcf 
+par -w -intstyle ise -ol high -mt off ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ncd ROOT_SYSTEM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ROOT_SYSTEM.twx ROOT_SYSTEM.ncd -o ROOT_SYSTEM.twr ROOT_SYSTEM.pcf -ucf ROOT_SYSTEM.ucf 
+bitgen -intstyle ise -f ROOT_SYSTEM.ut ROOT_SYSTEM.ncd 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ROOT_SYSTEM.ucf -p xc6slx45-csg324-3 "ROOT_SYSTEM.ngc" ROOT_SYSTEM.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ngd ROOT_SYSTEM.pcf 
+par -w -intstyle ise -ol high -mt off ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ncd ROOT_SYSTEM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ROOT_SYSTEM.twx ROOT_SYSTEM.ncd -o ROOT_SYSTEM.twr ROOT_SYSTEM.pcf -ucf ROOT_SYSTEM.ucf 
+bitgen -intstyle ise -f ROOT_SYSTEM.ut ROOT_SYSTEM.ncd 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ROOT_SYSTEM.ucf -p xc6slx45-csg324-3 "ROOT_SYSTEM.ngc" ROOT_SYSTEM.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ngd ROOT_SYSTEM.pcf 
+par -w -intstyle ise -ol high -mt off ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ncd ROOT_SYSTEM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ROOT_SYSTEM.twx ROOT_SYSTEM.ncd -o ROOT_SYSTEM.twr ROOT_SYSTEM.pcf -ucf ROOT_SYSTEM.ucf 
+bitgen -intstyle ise -f ROOT_SYSTEM.ut ROOT_SYSTEM.ncd 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ROOT_SYSTEM.ucf -p xc6slx45-csg324-3 "ROOT_SYSTEM.ngc" ROOT_SYSTEM.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ngd ROOT_SYSTEM.pcf 
+par -w -intstyle ise -ol high -mt off ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ncd ROOT_SYSTEM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ROOT_SYSTEM.twx ROOT_SYSTEM.ncd -o ROOT_SYSTEM.twr ROOT_SYSTEM.pcf -ucf ROOT_SYSTEM.ucf 
+bitgen -intstyle ise -f ROOT_SYSTEM.ut ROOT_SYSTEM.ncd 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ROOT_SYSTEM.ucf -p xc6slx45-csg324-3 "ROOT_SYSTEM.ngc" ROOT_SYSTEM.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ngd ROOT_SYSTEM.pcf 
+par -w -intstyle ise -ol high -mt off ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ncd ROOT_SYSTEM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ROOT_SYSTEM.twx ROOT_SYSTEM.ncd -o ROOT_SYSTEM.twr ROOT_SYSTEM.pcf -ucf ROOT_SYSTEM.ucf 
+bitgen -intstyle ise -f ROOT_SYSTEM.ut ROOT_SYSTEM.ncd 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ROOT_SYSTEM.ucf -p xc6slx45-csg324-3 "ROOT_SYSTEM.ngc" ROOT_SYSTEM.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ngd ROOT_SYSTEM.pcf 
+par -w -intstyle ise -ol high -mt off ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ncd ROOT_SYSTEM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ROOT_SYSTEM.twx ROOT_SYSTEM.ncd -o ROOT_SYSTEM.twr ROOT_SYSTEM.pcf -ucf ROOT_SYSTEM.ucf 
+bitgen -intstyle ise -f ROOT_SYSTEM.ut ROOT_SYSTEM.ncd 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ROOT_SYSTEM.ucf -p xc6slx45-csg324-3 "ROOT_SYSTEM.ngc" ROOT_SYSTEM.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ngd ROOT_SYSTEM.pcf 
+par -w -intstyle ise -ol high -mt off ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ncd ROOT_SYSTEM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ROOT_SYSTEM.twx ROOT_SYSTEM.ncd -o ROOT_SYSTEM.twr ROOT_SYSTEM.pcf -ucf ROOT_SYSTEM.ucf 
+bitgen -intstyle ise -f ROOT_SYSTEM.ut ROOT_SYSTEM.ncd 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ROOT_SYSTEM.ucf -p xc6slx45-csg324-3 "ROOT_SYSTEM.ngc" ROOT_SYSTEM.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ngd ROOT_SYSTEM.pcf 
+par -w -intstyle ise -ol high -mt off ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ncd ROOT_SYSTEM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ROOT_SYSTEM.twx ROOT_SYSTEM.ncd -o ROOT_SYSTEM.twr ROOT_SYSTEM.pcf -ucf ROOT_SYSTEM.ucf 
+bitgen -intstyle ise -f ROOT_SYSTEM.ut ROOT_SYSTEM.ncd 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ROOT_SYSTEM.ucf -p xc6slx45-csg324-3 "ROOT_SYSTEM.ngc" ROOT_SYSTEM.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ngd ROOT_SYSTEM.pcf 
+par -w -intstyle ise -ol high -mt off ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ncd ROOT_SYSTEM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ROOT_SYSTEM.twx ROOT_SYSTEM.ncd -o ROOT_SYSTEM.twr ROOT_SYSTEM.pcf -ucf ROOT_SYSTEM.ucf 
+bitgen -intstyle ise -f ROOT_SYSTEM.ut ROOT_SYSTEM.ncd 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ROOT_SYSTEM.ucf -p xc6slx45-csg324-3 "ROOT_SYSTEM.ngc" ROOT_SYSTEM.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ngd ROOT_SYSTEM.pcf 
+par -w -intstyle ise -ol high -mt off ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ncd ROOT_SYSTEM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ROOT_SYSTEM.twx ROOT_SYSTEM.ncd -o ROOT_SYSTEM.twr ROOT_SYSTEM.pcf -ucf ROOT_SYSTEM.ucf 
+bitgen -intstyle ise -f ROOT_SYSTEM.ut ROOT_SYSTEM.ncd 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ROOT_SYSTEM.ucf -p xc6slx45-csg324-3 "ROOT_SYSTEM.ngc" ROOT_SYSTEM.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ngd ROOT_SYSTEM.pcf 
+par -w -intstyle ise -ol high -mt off ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ncd ROOT_SYSTEM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ROOT_SYSTEM.twx ROOT_SYSTEM.ncd -o ROOT_SYSTEM.twr ROOT_SYSTEM.pcf -ucf ROOT_SYSTEM.ucf 
+bitgen -intstyle ise -f ROOT_SYSTEM.ut ROOT_SYSTEM.ncd 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ROOT_SYSTEM.ucf -p xc6slx45-csg324-3 "ROOT_SYSTEM.ngc" ROOT_SYSTEM.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ngd ROOT_SYSTEM.pcf 
+par -w -intstyle ise -ol high -mt off ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ncd ROOT_SYSTEM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ROOT_SYSTEM.twx ROOT_SYSTEM.ncd -o ROOT_SYSTEM.twr ROOT_SYSTEM.pcf -ucf ROOT_SYSTEM.ucf 
+bitgen -intstyle ise -f ROOT_SYSTEM.ut ROOT_SYSTEM.ncd 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ROOT_SYSTEM.ucf -p xc6slx45-csg324-3 "ROOT_SYSTEM.ngc" ROOT_SYSTEM.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ngd ROOT_SYSTEM.pcf 
+par -w -intstyle ise -ol high -mt off ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ncd ROOT_SYSTEM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ROOT_SYSTEM.twx ROOT_SYSTEM.ncd -o ROOT_SYSTEM.twr ROOT_SYSTEM.pcf -ucf ROOT_SYSTEM.ucf 
+bitgen -intstyle ise -f ROOT_SYSTEM.ut ROOT_SYSTEM.ncd 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ROOT_SYSTEM.ucf -p xc6slx45-csg324-3 "ROOT_SYSTEM.ngc" ROOT_SYSTEM.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ngd ROOT_SYSTEM.pcf 
+par -w -intstyle ise -ol high -mt off ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ncd ROOT_SYSTEM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ROOT_SYSTEM.twx ROOT_SYSTEM.ncd -o ROOT_SYSTEM.twr ROOT_SYSTEM.pcf -ucf ROOT_SYSTEM.ucf 
+bitgen -intstyle ise -f ROOT_SYSTEM.ut ROOT_SYSTEM.ncd 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ROOT_SYSTEM.ucf -p xc6slx45-csg324-3 "ROOT_SYSTEM.ngc" ROOT_SYSTEM.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ngd ROOT_SYSTEM.pcf 
+par -w -intstyle ise -ol high -mt off ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ncd ROOT_SYSTEM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ROOT_SYSTEM.twx ROOT_SYSTEM.ncd -o ROOT_SYSTEM.twr ROOT_SYSTEM.pcf -ucf ROOT_SYSTEM.ucf 
+bitgen -intstyle ise -f ROOT_SYSTEM.ut ROOT_SYSTEM.ncd 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ROOT_SYSTEM.ucf -p xc6slx45-csg324-3 "ROOT_SYSTEM.ngc" ROOT_SYSTEM.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ngd ROOT_SYSTEM.pcf 
+par -w -intstyle ise -ol high -mt off ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ncd ROOT_SYSTEM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ROOT_SYSTEM.twx ROOT_SYSTEM.ncd -o ROOT_SYSTEM.twr ROOT_SYSTEM.pcf -ucf ROOT_SYSTEM.ucf 
+bitgen -intstyle ise -f ROOT_SYSTEM.ut ROOT_SYSTEM.ncd 
+xst -intstyle ise -ifn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.xst" -ofn "E:/UOM/Xilinx Workspace/Processor/ROOT_SYSTEM.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ROOT_SYSTEM.ucf -p xc6slx45-csg324-3 "ROOT_SYSTEM.ngc" ROOT_SYSTEM.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ngd ROOT_SYSTEM.pcf 
+par -w -intstyle ise -ol high -mt off ROOT_SYSTEM_map.ncd ROOT_SYSTEM.ncd ROOT_SYSTEM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ROOT_SYSTEM.twx ROOT_SYSTEM.ncd -o ROOT_SYSTEM.twr ROOT_SYSTEM.pcf -ucf ROOT_SYSTEM.ucf 
+bitgen -intstyle ise -f ROOT_SYSTEM.ut ROOT_SYSTEM.ncd 

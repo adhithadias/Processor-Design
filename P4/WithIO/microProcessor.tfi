@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+microProcessor instance_name (
+    .clk(clk), 
+    .Z_flag(Z_flag), 
+    .addr_sel(addr_sel), 
+    .JUMP(JUMP), 
+    .addr(addr), 
+    .MBRU(MBRU), 
+    .MIR(MIR)
+    );
+
+

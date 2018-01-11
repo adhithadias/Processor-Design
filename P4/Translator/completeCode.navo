@@ -1,0 +1,166 @@
+CLAC
+MVACR1
+MVACR2
+
+L1
+
+	CLAC
+	MVACR3
+	
+	// Calculation of the first pixel value
+	MOVR2
+	MUL4
+	MUL2
+	MVACR
+	MOVR1
+	ADD
+
+	// First pixel
+	MVACR4
+	MVACMAR
+	LDAC
+	MVACR3
+
+	// Second pixel
+	MOVR4
+	INAC
+	MVACMAR
+	LDAC
+	MUL2
+	ADDR3
+
+	MOVR4
+	INAC
+	INAC
+	MVACMAR
+	LDAC
+	ADDR3
+
+	// Go to the second pixel line
+	MOVR4
+	ADDV 8
+	MVACR4
+	MVACMAR
+	LDAC
+	MUL2
+	ADDR3
+
+	// Multiply middle pixel by 4
+	MOVR4
+	INAC
+	MVACMAR
+	LDAC
+	MUL4
+	ADDR3
+
+	MOVR4
+	INAC
+	INAC
+	MVACMAR
+	LDAC
+	MUL2
+	ADDR3
+
+	// Go to the third pixel line
+	MOVR4
+	ADDV 8
+	MVACR4
+	MVACMAR
+	LDAC
+	ADDR3
+
+	MOVR4
+	INAC
+	MVACMAR
+	LDAC
+	MUL2
+	ADDR3
+
+	MOVR4
+	INAC
+	INAC
+	MVACMAR
+	LDAC
+	ADDR3
+	
+	// Calculate the pixel store address
+	MOVR2
+	MUL4
+	MUL2
+	MVACR
+	MOVR1
+	ADD
+
+	MVACMAR
+
+	// Calculate the final convolutio value and store it
+	MOVR3
+	DIV
+	STAC
+
+	INR1
+	SUBV 6
+
+	JMNZ L1
+
+	CLAC
+	MVACR1
+
+	INR2
+	SUBV 6
+
+	JMNZ L1
+
+
+// Choose pixels
+
+CLAC
+MVACR1
+MVACR2
+MVACR3
+
+L2
+
+	MOVR2
+
+	// Multiply by 512, Image_size x 2, 16
+	MUL4
+	MUL4
+	MVACR
+	
+	MOVR1
+	MUL2
+	ADD
+
+	MVACMAR
+	LDAC
+	MVACR
+
+	MOVR3
+	MVACMAR
+	MOVR
+	STAC
+
+	MOVR3
+	INAC
+	MVACR3
+
+	INR1
+
+	// Substract Image_size/2
+	SUBV 4
+
+	JMNZ L2
+
+	CLAC
+	MVACR1
+	INR2
+
+	// Substract Image_size/2
+	SUBV 4
+
+	JMNZ L2
+
+FINISH
+
+NOP

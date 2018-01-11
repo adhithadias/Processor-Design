@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+MAR instance_name (
+    .clk(clk), 
+    .load(load), 
+    .C_bus(C_bus), 
+    .data_addr(data_addr)
+    );
+
+

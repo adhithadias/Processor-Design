@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+PC instance_name (
+    .clk(clk), 
+    .load(load), 
+    .inc(inc), 
+    .C_bus(C_bus), 
+    .ins_addr(ins_addr)
+    );
+
+

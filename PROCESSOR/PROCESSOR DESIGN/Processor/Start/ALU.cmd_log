@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj Start -o "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start/ALU.tfi" -lib work "C:/Users/adhit/Desktop/Processor Design/Projects/Processor/Start//ALU.v" -module ALU -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

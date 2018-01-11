@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\UOM\Xilinx Workspace\Processor\ROOT_SYSTEM.ncd
+OUTFILE=E:\UOM\Xilinx Workspace\Processor\ROOT_SYSTEM.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=E:\UOM\Xilinx Workspace\Processor
+LICENSE=WebPack
+USER_INFO=211303426_0_0_413

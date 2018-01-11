@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+Processor instance_name (
+    .clk(clk), 
+    .data_in(data_in), 
+    .DRAM_addr(DRAM_addr), 
+    .DRAM_data_write(DRAM_data_write), 
+    .write(write), 
+    .IROM_ins_fetch(IROM_ins_fetch), 
+    .IROM_addr(IROM_addr)
+    );
+
+

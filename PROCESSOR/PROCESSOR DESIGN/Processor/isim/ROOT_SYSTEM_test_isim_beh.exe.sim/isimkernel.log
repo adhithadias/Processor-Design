@@ -1,0 +1,29 @@
+Command line:
+   ROOT_SYSTEM_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53999
+
+Mon May 08 00:11:44 2017
+
+
+ Elaboration Time: 0.140625 sec
+
+ Current Memory Usage: 1505.43 Meg
+
+ Total Signals          : 325
+ Total Nets             : 1077
+ Total Signal Drivers   : 123
+ Total Blocks           : 47
+ Total Primitive Blocks : 41
+ Total Processes        : 163
+ Total Traceable Variables  : 479
+ Total Scalar Nets and Variables : 809020
+Total Line Count : 1040
+
+ Total Simulation Time: 0.265625 sec
+
+ Current Memory Usage: 404.386 Meg
+
+Mon May 08 00:52:27 2017
+

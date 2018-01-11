@@ -1,0 +1,50 @@
+// Choose pixels
+
+CLAC
+MVACR1
+MVACR2
+MVACR3
+
+L2
+
+	MOVR2
+
+	// Multiply by 512, Image_size x 2, 16
+	MUL4
+	MUL4
+	MVACR
+	
+	MOVR1
+	MUL2
+	ADD
+
+	MVACMAR
+	LDAC
+	MVACR
+
+	MOVR3
+	MVACMAR
+	MOVR
+	STAC
+
+	MOVR3
+	INAC
+	MVACR3
+
+	INR1
+
+	// Substract Image_size/2
+	SUBV 4
+
+	JMNZ L2
+
+	CLAC
+	MVACR1
+	INR2
+
+	// Substract Image_size/2
+	SUBV 4
+
+	JMNZ L2
+
+NOP

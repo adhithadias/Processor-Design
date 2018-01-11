@@ -1,0 +1,18 @@
+
+
+
+// Instantiate the module
+decoder instance_name (
+    .b_control(b_control), 
+    .MDR(MDR), 
+    .PC(PC), 
+    .MBRU(MBRU), 
+    .R1(R1), 
+    .R2(R2), 
+    .R3(R3), 
+    .R4(R4), 
+    .R(R), 
+    .B_bus(B_bus)
+    );
+
+
